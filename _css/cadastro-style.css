@@ -1,0 +1,241 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #03071b;
+}
+
+header .menu02 {
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+    border-bottom: none;
+    display: inline-flex;
+}
+
+header .menu02 #logoPrincipal {
+    display: inline-flex;
+    margin-top: 0px;
+    margin-left: 6%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+header .menu02 #logoPrincipal a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-flex;
+}
+
+header .menu02 #logoPrincipal a h2 {
+    margin-top: 8px;
+    font-size: 28px;
+}
+
+header .menu02 #logoPrincipal a img {
+    width: 40px;
+    height: 50px;
+    transform: rotate(-1deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #03071b;
+}
+
+.container {
+    width: 80%;
+    padding: 20px;
+}
+
+.container h2 {
+    width: 100%;
+    color: #00b2f0;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 36px;
+}
+
+.container .row100 {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
+.container .row100 .col {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: .5s;
+}
+
+.container .row100 .col-2 {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 70px 0 10px;
+    transition: .5s;
+}
+
+.container .row100 .inputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #00b2f0;
+}
+
+.container .row100 .inputBox input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #000;
+}
+
+.container .row100 .inputBox select {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 15px;
+    z-index: 1;
+    color: #000;
+
+    cursor: pointer;
+	-webkit-appearance:none; 
+	background: transparent url("../img/arrow-down-sign-to-navigate.png") 95% 50% no-repeat;
+    background-size: 24px;
+}
+
+.container .row100 .inputBox select:hover {
+    border: none;
+    background: #00b2f0 url("../_img/arrow-down-sign-to-navigate.png") 95% 50% no-repeat;
+    background-size: 24px;
+    outline: none;
+    box-shadow: none;
+}
+
+.container .row100 .inputBox select:focus {
+    background: #00b2f0 url("../_img/arrow-down-sign-to-navigate.png") 95% 50% no-repeat;
+    background-size: 24px;
+    border: none;
+	outline: none;
+    box-shadow: none;
+}
+
+.container .row100 .inputBox .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: .5s;
+    pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus + .text, 
+.container .row100 .inputBox input:valid + .text {
+    top: -35px;
+    left: -10px;
+}
+
+.container .row100 .inputBox select:focus + .text,
+.container .row100 .inputBox select:valid + .text
+{
+    top: -35px;
+    left: 0px;
+}
+
+
+.container .row100 .inputBox .line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #00b2f0;
+    transition: .5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus ~ .line, 
+.container .row100 .inputBox input:valid ~ .line {
+    height: 100%;
+}
+
+.container .row100 .inputBox select:focus ~ .line,
+.container .row100 .inputBox select:valid ~ .line
+{
+    height: 100%;
+}
+
+
+input[type='submit'] {  
+    cursor: pointer;
+    outline: none;
+    padding: 10px 35px;
+    background: #00b2f0;
+    color: #000;
+    font-size: 20px;
+    border-radius: 2px;
+    border: 1px solid #00b2f0;
+}
+
+a input[type='submit']#efetuarLogin {  
+    cursor: pointer;
+    outline: none;
+    padding: 10px 35px;
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 2px;
+    border: 1px solid #00b2f0;
+}
+
+input[type='submit']:hover {
+    border: 1px solid #Fff;
+    color: #000;
+    background-color: #fff;
+}
+
+input[type='submit']#efetuarLogin:hover {
+    background-color: #00b2f0;
+    color: #000;
+}
+

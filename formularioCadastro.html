@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="_css/cadastro-style.css">
+    <link rel="sorcut icon" href="img/logoPartnership.png" type="image/png" style="width: 16px; height: 16px; transform: rotate(-1deg);">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script>
+        $(function() {
+            $('#telefone').mask('(99) 99999-9999');
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="menu02">
+            <div id="logoPrincipal">
+                <a href="projeto-oculos.html">
+                    <img src="img/logoPartnership.png" width="50">
+                    <h2>Partnership</h2>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <h2>Formulário de Cadastro</h2>
+            <div class="row100">
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span class="text">Nome Completo*</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span class="text">E-mail*</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row100">
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="" id="telefone" required="required">
+                        <span class="text" id="telefone">Telefone*</span>
+                        <span class="line" id="telefone"></span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="password" name="" required="required">
+                        <span class="text">Senha*</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row100">
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span class="text">Nacionalidade*</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <div class="inputBox">
+                        <Select>
+                            <option>...</option>
+                            <option>Heterosexual</option>
+                            <option>Homosexual</option>
+                            <option>Bissexual</option>
+                            <option>Pansexual</option>
+                            <option>Prefiro não dizer...</option>
+                        </Select>
+                        <span class="text">Gênero*</span>
+                        <span class="line" id="line02"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row100">
+                <div class="col">
+                    <input type="submit" value="Realizar cadastro">
+                </div>
+
+                <div class="col">
+                    <a href="login.html"><input type="submit" id="efetuarLogin" value="Efetuar Login"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
