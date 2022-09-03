@@ -5,12 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem vindo a Partnership</title>
-    <link rel="stylesheet" href="_css/style-oculos.css">
+    <link rel="stylesheet" href="_css/style-osc.css">
     <link rel="stylesheet" href="_css/bootstrap.css"/>
     <link rel="stylesheet" href="_css/bootstrap.min.css"/>
 
     <link rel="sorcut icon" href="img/Logo-removebg-preview.png" type="image/png" style="width: 16px; height: 16px; transform: rotate(-1deg);">
 
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    <script>
+        $(function() {
+            $( "#tabes" ).tabs({active:0}).addClass("ui-tabs-vertical ui-helper-clearfix");
+            $( "#tabes li" ).removeClass("ui-corner-top" ).addClass("ui-corner-left").addClass("ui-corner-right");
+        });
+    </script> 
 </head>
 <body>
     
@@ -28,7 +38,7 @@
 
         <div class="menu02">
             <div id="logoPrincipal">
-                <a href="projeto-oculos.html">
+                <a href="projetoOlkaha.html">
                     <img src="img/Logo-removebg-preview.png">
                     <h2><span>&nbsp; O</span>lkaha <span>S</span>oluções <span>C</span>orporativas</h2>
                 </a>
@@ -46,19 +56,19 @@
                             </div>
         
                             <div class="dropdown">
-                                <li><a href="#st2" class="btn-line" onclick=" toggMenu()"><span></span><span></span><span></span><span></span>Suíte 1</a></li>
+                                <li><a href="#st2" class="btn-line" onclick=" toggMenu()"><span></span><span></span><span></span><span></span>Sobre Olkaha</a></li>
                             </div>
         
                             <div class="dropdown">
-                                <li><a href="#st1" class="btn-line" onclick=" toggMenu()"><span></span><span></span><span></span><span></span>Suíte 2</a></li>
+                                <li><a href="#st1" class="btn-line" onclick=" toggMenu()"><span></span><span></span><span></span><span></span>Missão OSC</a></li>
                             </div>
 
                             <div class="dropdown">
-                                <li><a href="extenseSpan.html" class="btn-line" onclick=" toggMenu()"><span></span><span></span><span></span><span></span>Serviços</a></li>
+                                <li><a href="" class="btn-line" onclick=" toggMenu()"><span></span><span></span><span></span><span></span>Serviços</a></li>
                             </div>
         
                             <div class="dropdown">
-                                <li><a href="sobrePartnership.html" class="btn-line"><span></span><span></span><span></span><span></span>Sobre Olkaha</a></li>
+                                <li><a href="" class="btn-line"><span></span><span></span><span></span><span></span>Contratos</a></li>
                             </div>
                         </ul>	
 
@@ -96,11 +106,103 @@
                     <span></span>
                     <span></span>
                     <span></span>
-                    <h3>Inove Engove pra você!</h3>
+                    <h3>Facilitando sua vida tecnológica!</h3>
                 </div>
-            </div>  
+            </div> 
+
+            <div class="tituloPrinc">
+                <div>Facilite o seu futuro, junte-se a nossa equipe!</div>
+                <div>Olkaha Soluções Corporativas, em compromisso com a qualidade entregando prestações serviços de ponta, posicionando o consumidor a frente do tempo com a tecnologia mais desenvolvida afim de visualizar um novo futuro.</div>
+            </div>
         </section>
     </div>
+
+
+
+    <div class="sobrePartnerT">
+        <section id="tabelaSobre">
+            <div id="tabes">
+                <ul>
+                    <li><a href="#tabs-1">Sobre a Empresa</a></li>
+                    <li><a href="#tabs-2">Missão, Visão e Valores</a></li>
+                    <li><a href="#tabs-3">Atendimento ao Cliente</a></li>
+                    <li><a href="#tabs-4">Mentes do Projeto</a></li>
+                    <li><a href="#tabs-5"></a></li>
+                    <li class="linhaRolamento"></li>
+                </ul>
+                
+                <div id="tabs-1">
+                    <div class="lado02">
+                        <br>
+                        <div id="sobre">Sobre a</div>
+                        <div id="logoPrincipal2">
+                            <a href="">
+                                <img src="img/Logo-removebg-preview.png" width="50">
+                                <h2>Olkaha (OSC)</h2>
+                            </a>
+                        </div>
+                        <p><br>Fundada em 2022, a Olkaha Soluções Corporativas LTDA, tradicional empresa no ramo de
+                            prestação de serviços de tecnologia, no seguimento de locação de mão-de-obra
+                            administrativa e operacional. O objetivo deste projeto, é mostrar que a OSC tem
+                            como meta oferecer produtos e serviços com inovações em um ambiente complexo de
+                            tecnologia, voltado para prestação de serviços no ramo de tecnologia e infraestrutura,
+                            projetos estruturados que podem ser desenvolvidos sob encomenda por terceiros,
+                            procurando encontrar novas maneiras de atender às necessidades dos clientes e gerar
+                            mudanças mais assertivas e eficazes com velocidade.</p>
+                    </div>
+                </div>
+                <div id="tabs-2">
+                    <div class="lado01">
+                        
+                    </div>
+                    <div class="lado02">
+                        <br>
+                        <p><span>Missão</span><br>Oferecer soluções com tecnologia aplicada contribuindo com o melhor serviço para os nossos clientes. </p>
+                        <p><span>Visão</span><br>Ser reconhecida por prestar serviços tecnológicos de qualidade, com o objetivo, em que alguns anos sermos a melhor empresa de prestação de serviço do DF.</p>
+                        <p><span>Valores</span>
+                            <br>● Ética
+                            <br>● Atenção ao cliente
+                            <br>● Inovação
+                            <br>● Qualidade 
+                            <br>● Acessibilidade
+                            <br>● Sustentabilidade
+                            <br>● Segurança na informação
+                        </p>
+                    </div>
+                </div>
+                <div id="tabs-3">
+                    <div class="lado02">
+                        <br>
+                        <p><span>Serviço Virtual</span>
+                            <br>●	Redes, Midias e contatos sociais 
+                            <br>●	Contratos por projeto.
+                            <br>●	Acompanhamento de projetos.
+                            <br>●	Desenvolvimento.
+                            <br>●	Acesso ao sistema de nossa empresa.
+                            <br>●	Assistêcnia técnica virtual e dúvidas.
+                        </p>
+                    </div>
+                </div>
+                <div id="tabs-4">
+                    <div class="lado01">
+                        
+                    </div>
+                    <div class="lado02">
+                        <span></span><div>Em desenvolvimento...<br><a class="botaoInscreva" href="">Saiba Mais</a></div>
+                    </div>
+                </div>
+
+                <div id="tabs-5">
+                    <div class="lado02">
+                        <span></span><div><br><a class="botaoInscreva" href=""></a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
 
     <footer>
         <div class="footer">
@@ -128,7 +230,6 @@
                 <a href="#">Termos e condições</a>
                 <a href="#">Polítca de cookies</a>
                 <a href="#">Configurações de cookies</a>
-                <a href="sobrePartnership.html">Sobre a Empresa</a>
             </div>
         </div>
     </footer>

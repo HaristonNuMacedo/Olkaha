@@ -581,21 +581,23 @@ div.menu h1{
     justify-content: center;
     align-items: center;
     background-color: #0e1538;
+    border-bottom: 20px solid #fff;  
 }
 
 #sessao01 {
     position: relative;
     width: 1366px;
-    height: 600px; 
+    height: 650px; 
     background-color: #0e1538;
     display: flex;
-    justify-content: center;
-    align-items: center;    
+    justify-content: start;
+    align-items: center;  
+    padding-bottom: 70px;
 }
 
 #sessao01 .slogaEm {
     position: absolute;
-    bottom: 40px;
+    bottom: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -603,7 +605,7 @@ div.menu h1{
 
 #sessao01 .loader {
     position: relative;
-    width: 400px;
+    width: 500px;
     height: 100px;
     background-color: #0e1538;
     display: flex;
@@ -777,6 +779,276 @@ div.menu h1{
 
 
   
+
+
+
+
+
+
+.sobrePartnerT {
+    background-color: #0e1538;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tabelaSobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    background-color: #0e1538;
+    width: 1366px;
+}
+
+#tabes{
+    margin-top: 0px;
+    margin-bottom: 0;
+} 
+
+#tabes .tituloPrinc {
+    text-align: center;
+    position: relative;
+    margin-bottom: 80px;
+    padding: 10px 150px;
+}
+
+#tabes .tituloPrinc div:nth-child(1) {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+    display: block;
+    padding: 0px;
+    margin-bottom: 15px;
+}
+
+#tabes .tituloPrinc div:nth-child(2) {
+    color: #aaa;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+#tabes.ui-tabs-vertical {
+    position: relative;
+    width: 100%;
+    margin-left: 0%;
+    height: 650px;
+    background-color: #0e1538;
+    border: none;
+}
+
+#tabes.ui-tabs-vertical .ui-tabs-nav{
+    display: inline-block;
+    background: none;
+    border: none;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+        /*Jogando o conteúdo do menu para o 
+            final com o limite determinado no tamanho do menu */
+.ui-tabs .ui-tabs-nav li {
+    list-style: none;
+    position: relative;
+    top: 0;
+    margin: 0px 0px!important;
+    border-bottom-width: 0;
+    padding: 0 50px!important;
+    white-space: normal!important;
+    width: 220px!important;
+    text-align: end;
+}
+
+
+#tabes.ui-tabs-vertical .ui-tabs-nav li{
+    border: 0px;
+    clear: left; /* deixa um embaixo do outro*/
+    margin-bottom: -2px;
+    outline: none;
+    padding: 0px 0px;
+    border-radius: 0px;
+    cursor: pointer;
+    border-right: 3px solid #00b2f0;
+    z-index: 1;
+    width: 350px!important;
+}
+
+                /* ICONE PARA CADA ÍTEM NO MENU */ 
+#tabes.ui-tabs-vertical .ui-tabs-nav li:nth-child(1) {
+    background: transparent url("../_img/search.png") 93% 50% no-repeat;
+    background-size: 16px;
+}
+
+#tabes.ui-tabs-vertical .ui-tabs-nav li:nth-child(2) {
+    background: transparent url("../_img/calendarPerson.png") 94.5% 50% no-repeat;
+    background-size: 24px;
+}
+
+#tabes.ui-tabs-vertical .ui-tabs-nav li:nth-child(3) {
+    background: transparent url("../_img/open-book.png") 96% 50% no-repeat;
+    background-size: 32px;
+}
+
+#tabes.ui-tabs-vertical .ui-tabs-nav li:nth-child(4) {
+    background: transparent url("../_img/alphabet.png") 94% 50% no-repeat;
+    background-size: 24px;
+}
+
+#tabes.ui-tabs-vertical .ui-tabs-nav li:nth-child(5) {
+    background: transparent url("../_img/alphabet.png") 94% 50% no-repeat;
+    background-size: 0px;
+}
+
+#tabes.ui-tabs-vertical .ui-tabs-nav li:nth-child(6) {
+    height: 375px;
+    cursor: context-menu;
+}
+
+
+
+
+#tabes.ui-tabs-vertical .ui-tabs-nav li a{
+    width: 350px;
+    display: block;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: -25px;
+    padding-right: 50px!important;
+    padding: 7px;
+    margin-right: 50px!important;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+#tabes.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active{
+    margin-bottom: -2px;
+    outline: none;
+    width: 420px;
+    background-color: transparent;
+    border-right: 6px solid #fff;
+    cursor: pointer!important; 
+}
+
+
+
+                /* ICONE PARA CADA ÍTEM NO MENU */  
+
+#tabes.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:nth-child(1),
+#tabes.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:nth-child(2),
+#tabes.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:nth-child(3),
+#tabes.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:nth-child(4),
+#tabes.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:nth-child(5)
+{
+    background: #00b2f0;
+    width: 350px!important;
+}
+
+
+.ui-tabs-active a{
+    color: #fff!important;
+    font-size: 20px!important;
+}
+
+.ui-tabs-vertical .ui-tabs-panel {
+    float: right;
+    width: 70%;
+    padding: 2px;
+    margin-top: 0px;
+    color: #fff;
+}
+
+.ui-tabs-vertical .ui-tabs-panel .lado01 {
+    float: left;
+    width: 65%;
+    padding: 2px;
+    display: inline-flex;
+}
+
+.ui-tabs-vertical .ui-tabs-panel .lado01 img {
+    width: 525px;
+    z-index: 1;
+}
+
+.ui-tabs-vertical .ui-tabs-panel .lado02 {
+    padding: 0px;
+    margin-right: 80px;
+    margin-left: 50px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.ui-tabs-vertical .ui-tabs-panel .lado02 .botaoInscreva {
+    float: left;
+
+    border: 1px solid #aaa;
+    text-decoration: none;
+    margin-top: 15px;
+    padding: 5px 15px;
+    cursor: pointer;
+    background: transparent;
+    color: #Aaa;
+}
+
+.ui-tabs-vertical .ui-tabs-panel .lado02 .botaoInscreva:hover {
+    background: #00b2f0;
+    border: 1px solid #00b2f0;
+    color: #000;
+}
+
+.ui-tabs-vertical .ui-tabs-panel .lado02 span {
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 40px;
+    font-weight: 500;
+    color: #fff;
+    margin-left: -20px;
+}
+
+.ui-tabs-vertical .ui-tabs-panel .lado02 p {
+    font-size: 18px;
+    margin-left: 15px;
+    color: #aaa;
+    text-align: justify;
+}
+
+#sobre {
+    margin-left: -50px;
+    font-size: 25px;
+}
+
+#logoPrincipal2 {
+    display: inline-flex;
+    margin-top: 0px;
+    margin-left: -50px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#logoPrincipal2 a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-flex;
+    cursor: text;
+}
+
+#logoPrincipal2 a h2 {
+    margin-top: 6px;
+}
+
+#logoPrincipal2 a img {
+    width: 55px;
+    height: 50px;
+    transform: rotate(0deg);
+}
+
+
+
+
+
 
 
 
