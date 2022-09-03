@@ -580,7 +580,7 @@ div.menu h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0e1538;
+    background-color: #333;
     border-bottom: 20px solid #fff;  
 }
 
@@ -588,9 +588,9 @@ div.menu h1{
     position: relative;
     width: 1366px;
     height: 650px; 
-    background-color: #0e1538;
+    background-color: #333;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;  
     padding-bottom: 70px;
 }
@@ -758,6 +758,50 @@ div.menu h1{
     z-index: 10;
 }
 
+#mktOSC {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 1200px;
+    margin-left: -150px;
+    margin-top: 350px;
+}
+
+#mktOSC img {
+    position: absolute;
+    width: 900px;
+    margin-left: 0px;
+    margin-top: 150px;
+}
+
+#mktOSC .tituloPrinc {
+    text-align: start;
+    position: absolute;
+    padding: 20px 20px;
+    background-color: rgb(14, 21, 56, 0.6);
+    width: 600px;
+    right: 50px;
+    bottom: -40px;
+    backdrop-filter: blur(10px);
+}
+
+#mktOSC .tituloPrinc div:nth-child(1) {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+    display: block;
+    padding: 0px;
+    margin-bottom: 15px;
+    text-align: start;
+}
+
+#mktOSC .tituloPrinc div:nth-child(2) {
+    color: #fff;
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 500;
+}
+
 
 
 
@@ -805,28 +849,6 @@ div.menu h1{
     margin-top: 0px;
     margin-bottom: 0;
 } 
-
-#tabes .tituloPrinc {
-    text-align: center;
-    position: relative;
-    margin-bottom: 80px;
-    padding: 10px 150px;
-}
-
-#tabes .tituloPrinc div:nth-child(1) {
-    color: #fff;
-    font-size: 36px;
-    font-weight: 500;
-    display: block;
-    padding: 0px;
-    margin-bottom: 15px;
-}
-
-#tabes .tituloPrinc div:nth-child(2) {
-    color: #aaa;
-    font-size: 18px;
-    line-height: 25px;
-}
 
 #tabes.ui-tabs-vertical {
     position: relative;
