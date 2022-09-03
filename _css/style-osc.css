@@ -793,17 +793,6 @@ div.menu h1{
     left: 0px;
 }
 
-footer {
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:12px;
-    color:#666;
-    width:483px;
-    margin:30px auto;
-    background-color:#bababa;	
-    padding:20px 0;
-    text-align:center;
-}
-
 #mktOSC .tituloPrinc {
     text-align: start;
     position: absolute;
