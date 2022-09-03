@@ -585,8 +585,8 @@ div.menu h1{
 
 #sessao01 {
     position: relative;
-    width: 1366px;
-    height: 650px; 
+    width: 1356px;
+    height: 755px; 
     background-color: #0e1538;
     display: flex;
     justify-content: center;
@@ -596,8 +596,8 @@ div.menu h1{
 
 #sessao01 .slogaEm {
     position: absolute;
-    bottom: 80px;
-    left: 180px;
+    bottom: 120px;
+    right: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -773,20 +773,46 @@ div.menu h1{
 
 #mktOSC img {
     position: absolute;
-    width: 880px;
+    width: 755px;
     right: 0px;
-    top: -3px;
+    top: 0px;
+}
+
+#sessao01 #video {
+    width:600px;
+    height:450px;
+    margin:100px auto 0;		
+}
+
+#sessao01 #video video {
+    width:600px;
+    height:450px;
+    margin-top: 0px;
+    position: absolute;
+    bottom: -56px;
+    left: 0px;
+}
+
+footer {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color:#666;
+    width:483px;
+    margin:30px auto;
+    background-color:#bababa;	
+    padding:20px 0;
+    text-align:center;
 }
 
 #mktOSC .tituloPrinc {
     text-align: start;
     position: absolute;
     padding: 20px 20px;
-    background-color: rgba(25, 26, 31, 0.8);
+    background-color: transparent;
     width: 600px;
-    right: 50px;
-    bottom: 80px;
-    backdrop-filter: blur(10px);
+    left: 0px;
+    top: 50px;
+    /*backdrop-filter: blur(10px);*/
 }
 
 #mktOSC .tituloPrinc div:nth-child(1) {
