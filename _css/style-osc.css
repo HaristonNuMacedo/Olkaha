@@ -580,15 +580,14 @@ div.menu h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #333;
-    border-bottom: 20px solid #fff;  
+    background-color: #0e1538;
 }
 
 #sessao01 {
     position: relative;
     width: 1366px;
     height: 650px; 
-    background-color: #333;
+    background-color: #0e1538;
     display: flex;
     justify-content: center;
     align-items: center;  
@@ -598,6 +597,7 @@ div.menu h1{
 #sessao01 .slogaEm {
     position: absolute;
     bottom: 80px;
+    left: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -607,7 +607,7 @@ div.menu h1{
     position: relative;
     width: 500px;
     height: 100px;
-    background-color: rgb(14, 21, 56, 0.4);
+    background-color:rgb(14, 21, 56, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -707,8 +707,11 @@ div.menu h1{
     left: 0px;
 }
 
-#sessao01 div.box img.logoOlkaha {
-    width: 400px;
+#sessao01 img.logoOlkaha {
+    width: 350px;
+    position: absolute;
+    left: 65px;
+    top: 80px;
 }
 
 
@@ -770,19 +773,19 @@ div.menu h1{
 
 #mktOSC img {
     position: absolute;
-    width: 900px;
-    margin-left: 0px;
-    margin-top: 150px;
+    width: 880px;
+    right: 0px;
+    top: -3px;
 }
 
 #mktOSC .tituloPrinc {
     text-align: start;
     position: absolute;
     padding: 20px 20px;
-    background-color: rgb(14, 21, 56, 0.6);
+    background-color: rgba(25, 26, 31, 0.8);
     width: 600px;
     right: 50px;
-    bottom: -40px;
+    bottom: 80px;
     backdrop-filter: blur(10px);
 }
 
@@ -835,6 +838,7 @@ div.menu h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 20px solid #fff;  
 }
 
 #tabelaSobre {
