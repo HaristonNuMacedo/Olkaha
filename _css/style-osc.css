@@ -607,13 +607,14 @@ div.menu h1{
     position: relative;
     width: 500px;
     height: 100px;
-    background-color: #0e1538;
+    background-color: rgb(14, 21, 56, 0.4);
     display: flex;
     justify-content: center;
     align-items: center;
     transition: .5s;
     overflow: hidden;
     z-index: 2;
+    backdrop-filter: blur(10px);
 }
 
 #sessao01 .loader h3 {
