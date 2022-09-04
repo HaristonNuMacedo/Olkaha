@@ -1111,6 +1111,86 @@ div.menu h1{
 
 
 
+.servicos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0e1538;
+    border-bottom: 20px solid white;
+    border-top: 20px solid white;
+    height: 750px;
+}
+
+.quadro {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 1320px;
+    height: 680px;
+    padding: 4px;
+    background-color: #00b2f0;
+}
+
+.janela:nth-child(1){
+    position: absolute;
+    width: 680px;
+    height: 340px;
+    background-color: #0e1538;
+    top: 4px;
+    left: 4px;
+
+    border-top-left-radius: 25px;
+}
+
+
+.janela:nth-child(2) {
+    position: absolute;
+    width: 680px;
+    height: 340px;
+    background-color: #0e1538;
+    bottom: 4px;
+    left: 4px;
+
+    border-bottom-left-radius: 25px;
+}
+
+.janela:nth-child(3){
+    position: absolute;
+    width: 680px;
+    height: 340px;
+    background-color: #0e1538;
+    right: 4px;
+    top: 4px;
+
+    border-top-right-radius: 25px;
+}
+
+.janela:nth-child(4) {
+    position: absolute;
+    width: 680px;
+    height: 340px;
+    background-color: #0e1538;
+    bottom: 4px;
+    right: 4px;
+
+    border-bottom-right-radius: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* RODAPÉ DO SITE COM ICONS */
 footer {
     position: relative;
