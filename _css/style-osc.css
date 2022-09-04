@@ -1118,15 +1118,15 @@ div.menu h1{
     background: #0e1538;
     border-bottom: 20px solid white;
     border-top: 20px solid white;
-    height: 750px;
+    height: 840px;
 }
 
 .quadro {
     position: relative;
     left: 0px;
     top: 0px;
-    width: 1320px;
-    height: 680px;
+    width: 1340px;
+    height: 754px;
     padding: 4px;
     background-color: #00b2f0;
 }
@@ -1134,46 +1134,130 @@ div.menu h1{
 .janela:nth-child(1){
     position: absolute;
     width: 680px;
-    height: 340px;
+    height: 370px;
     background-color: #0e1538;
     top: 4px;
     left: 4px;
 
+    background-image:url(../img/infraestrutura-de-rede_5-21.jpg);
+    margin-right: auto;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #1C0501;
+    background-size: 680px;
+
     border-top-left-radius: 25px;
 }
 
+.janela:nth-child(1) div{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-size: 22px;
+    background-color: rgb(0, 178, 240, 0.8);
+    z-index: 1;
+    width: 450px;
+    color: black;
+    padding: 5px 20px;
+    font-weight: 500;
+}
 
 .janela:nth-child(2) {
     position: absolute;
     width: 680px;
-    height: 340px;
+    height: 370px;
     background-color: #0e1538;
     bottom: 4px;
     left: 4px;
 
+    background-image:url(../img/sites-de-busca-1.jpeg);
+    margin-right: auto;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #1C0501;
+    background-size: 680px;
+
     border-bottom-left-radius: 25px;
+}
+
+.janela:nth-child(2) div{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-size: 22px;
+    background-color: rgb(0, 178, 240, 0.8);
+    z-index: 1;
+    width: 450px;
+    color: black;
+    padding: 5px 20px;
+    font-weight: 500;
 }
 
 .janela:nth-child(3){
     position: absolute;
     width: 680px;
-    height: 340px;
+    height: 370px;
     background-color: #0e1538;
     right: 4px;
     top: 4px;
 
+    background-image:url(../img/Hardware.jpg);
+    margin-right: auto;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #1C0501;
+    background-size: 680px;
+
     border-top-right-radius: 25px;
 }
+
+.janela:nth-child(3) div{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-size: 22px;
+    background-color: rgb(0, 178, 240, 0.8);
+    z-index: 2;
+    width: 450px;
+    color: black;
+    padding: 5px 20px;
+    font-weight: 500;
+}
+
 
 .janela:nth-child(4) {
     position: absolute;
     width: 680px;
-    height: 340px;
+    height: 370px;
     background-color: #0e1538;
     bottom: 4px;
     right: 4px;
 
+    background-image:url(../img/Seguranca-da-Informacao-1024x536.jpeg);
+    margin-right: auto;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #1C0501;
+    background-size: 680px;
+
     border-bottom-right-radius: 25px;
+}
+
+.janela:nth-child(4) div{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-size: 22px;
+    background-color: rgb(0, 178, 240, 0.8);
+    z-index: 2;
+    width: 450px;
+    color: black;
+    padding: 5px 20px;
+    font-weight: 500;
 }
 
 

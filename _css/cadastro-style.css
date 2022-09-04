@@ -31,17 +31,21 @@ header .menu02 #logoPrincipal a {
     text-decoration: none;
     color: #fff;
     display: inline-flex;
+    font-size: 22px;
 }
 
 header .menu02 #logoPrincipal a h2 {
-    margin-top: 8px;
-    font-size: 28px;
+    margin-top: 20px;
+}
+
+header .menu02 #logoPrincipal a h2 span {
+    color: #00b2f0;
 }
 
 header .menu02 #logoPrincipal a img {
-    width: 40px;
-    height: 50px;
-    transform: rotate(-1deg);
+    width: 75px;
+    height: 70px;
+    transform: rotate(0deg);
 }
 
 
