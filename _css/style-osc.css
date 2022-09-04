@@ -1111,7 +1111,7 @@ div.menu h1{
 
 
 
-.servicos {
+#servicos {
     display: flex;
     align-items: center;
     justify-content: center;
