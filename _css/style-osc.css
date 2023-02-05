@@ -39,7 +39,7 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 12px;
   }
   
   /* Track */
@@ -50,7 +50,7 @@ body {
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #353535;
-    border-radius: 2px; 
+    border-radius: 4px; 
   }
   
   /* Handle on hover */
@@ -1170,7 +1170,7 @@ div.menu h1{
     top: 4px;
     left: 4px;
 
-    background-image:url(../img/infraestrutura-de-rede_5-21.jpg);
+    /*background-image:url(../img/infraestrutura-de-rede_5-21.jpg);*/
     margin-right: auto;
     margin-left: auto;
     background-repeat: no-repeat;
@@ -1187,11 +1187,74 @@ div.menu h1{
     left: 0px;
     font-size: 22px;
     background-color: rgb(0, 178, 240, 0.8);
-    z-index: 1;
+    z-index: 0;
     width: 450px;
     color: black;
     padding: 5px 20px;
     font-weight: 500;
+}
+
+.janela_palestrante {
+    position:relative;
+    float:left;
+    width:650px;
+    height:376px;
+    border:solid 5px #FFF;
+    background-color:#1A1A1A;	
+    margin:0 20px 50px 0;
+    box-shadow:2px 2px 2px #333;
+}
+
+.janela_foto {
+    position:absolute;
+    top:0;left:0;
+    width:680px;
+    height:370px;
+    z-index:0;
+    clip:rect(0 680px 370px 0);
+}
+
+.janela_foto img {
+    width: 640px;
+    height: 380px;
+    position: relative;
+    top: -5px;
+}
+
+.janela_texto {
+    position: absolute;
+    top: 330px;
+    left: 0;
+    width: 360px;
+    height: 256px;
+    background-color: rgb(0, 178, 240, 0.8);
+    z-index: 2;
+    padding: 5px;
+    cursor: pointer;
+
+    transition: all .5s ease-out;
+}
+
+.janela_texto:hover {
+    top: 125px;
+}
+
+h3 {
+    font-size:22px;
+    font-weight: 500;
+    color:#1C0501;	
+    letter-spacing:-0.1em;
+    margin:0;
+}
+
+p {
+    font-size:14px;
+    color:#fff;
+    line-height:150%;
+}
+
+.azul {
+    color:#008B9C;	
 }
 
 .janela:nth-child(2) {
