@@ -1147,7 +1147,6 @@ div.menu h1{
     align-items: center;
     justify-content: center;
     background: #0e1538;
-    border-bottom: 20px solid white;
     border-top: 20px solid white;
     height: 840px;
 }
@@ -1170,7 +1169,7 @@ div.menu h1{
     top: 4px;
     left: 4px;
 
-    /*background-image:url(../img/infraestrutura-de-rede_5-21.jpg);*/
+    background-image:url(../img/infraestrutura-de-rede_5-21.jpg);
     margin-right: auto;
     margin-left: auto;
     background-repeat: no-repeat;
@@ -1179,11 +1178,12 @@ div.menu h1{
     background-size: 680px;
 
     border-top-left-radius: 25px;
+    transition: all .5s ease-out;
 }
 
-.janela:nth-child(1) div{
+.janela:nth-child(1) div.janela-texto{
     position: absolute;
-    bottom: 0px;
+    bottom: -160px;
     left: 0px;
     font-size: 22px;
     background-color: rgb(0, 178, 240, 0.8);
@@ -1192,70 +1192,29 @@ div.menu h1{
     color: black;
     padding: 5px 20px;
     font-weight: 500;
-}
+    height: 200px;
 
-.janela_palestrante {
-    position:relative;
-    float:left;
-    width:650px;
-    height:376px;
-    border:solid 5px #FFF;
-    background-color:#1A1A1A;	
-    margin:0 20px 50px 0;
-    box-shadow:2px 2px 2px #333;
-}
-
-.janela_foto {
-    position:absolute;
-    top:0;left:0;
-    width:680px;
-    height:370px;
-    z-index:0;
-    clip:rect(0 680px 370px 0);
-}
-
-.janela_foto img {
-    width: 640px;
-    height: 380px;
-    position: relative;
-    top: -5px;
-}
-
-.janela_texto {
-    position: absolute;
-    top: 330px;
-    left: 0;
-    width: 360px;
-    height: 256px;
-    background-color: rgb(0, 178, 240, 0.8);
-    z-index: 2;
-    padding: 5px;
     cursor: pointer;
-
     transition: all .5s ease-out;
 }
 
-.janela_texto:hover {
-    top: 125px;
+
+.janela:nth-child(1) div.janela-texto:hover{
+    transition: all .5s ease-out;
+    background-color: rgb(0, 178, 240, 0.8);
+    bottom: 0px;
+    width: 650px;
 }
 
-h3 {
-    font-size:22px;
+.janela:nth-child(1) div.janela-texto h3{
     font-weight: 500;
-    color:#1C0501;	
-    letter-spacing:-0.1em;
-    margin:0;
 }
 
-p {
-    font-size:14px;
-    color:#fff;
-    line-height:150%;
+.janela:nth-child(1) div.janela-texto p{
+    font-size: 16px;
+    color: #111;
 }
 
-.azul {
-    color:#008B9C;	
-}
 
 .janela:nth-child(2) {
     position: absolute;
@@ -1274,19 +1233,41 @@ p {
     background-size: 680px;
 
     border-bottom-left-radius: 25px;
+    z-index: 0;
 }
 
-.janela:nth-child(2) div{
+.janela:nth-child(2) div.janela-texto{
     position: absolute;
-    bottom: 0px;
+    bottom: -160px;
     left: 0px;
     font-size: 22px;
     background-color: rgb(0, 178, 240, 0.8);
-    z-index: 1;
+    z-index: 0;
     width: 450px;
     color: black;
     padding: 5px 20px;
     font-weight: 500;
+    height: 200px;
+
+    cursor: pointer;
+    transition: all .5s ease-out;
+}
+
+
+.janela:nth-child(2) div.janela-texto:hover{
+    transition: all .5s ease-out;
+    background-color: rgb(0, 178, 240, 0.8);
+    bottom: 0px;
+    width: 650px;
+}
+
+.janela:nth-child(2) div.janela-texto h3{
+    font-weight: 500;
+}
+
+.janela:nth-child(2) div.janela-texto p{
+    font-size: 16px;
+    color: #111;
 }
 
 .janela:nth-child(3){
@@ -1308,19 +1289,39 @@ p {
     border-top-right-radius: 25px;
 }
 
-.janela:nth-child(3) div{
+.janela:nth-child(3) div.janela-texto{
     position: absolute;
-    bottom: 0px;
+    bottom: -160px;
     left: 0px;
     font-size: 22px;
     background-color: rgb(0, 178, 240, 0.8);
-    z-index: 2;
+    z-index: 0;
     width: 450px;
     color: black;
     padding: 5px 20px;
     font-weight: 500;
+    height: 200px;
+
+    cursor: pointer;
+    transition: all .5s ease-out;
 }
 
+
+.janela:nth-child(3) div.janela-texto:hover{
+    transition: all .5s ease-out;
+    background-color: rgb(0, 178, 240, 0.8);
+    bottom: 0px;
+    width: 650px;
+}
+
+.janela:nth-child(3) div.janela-texto h3{
+    font-weight: 500;
+}
+
+.janela:nth-child(3) div.janela-texto p{
+    font-size: 16px;
+    color: #111;
+}
 
 .janela:nth-child(4) {
     position: absolute;
@@ -1341,17 +1342,55 @@ p {
     border-bottom-right-radius: 25px;
 }
 
-.janela:nth-child(4) div{
+.janela:nth-child(4) div.janela-texto{
     position: absolute;
-    bottom: 0px;
+    bottom: -160px;
     left: 0px;
     font-size: 22px;
     background-color: rgb(0, 178, 240, 0.8);
-    z-index: 2;
+    z-index: 0;
     width: 450px;
     color: black;
     padding: 5px 20px;
     font-weight: 500;
+    height: 200px;
+
+    cursor: pointer;
+    transition: all .5s ease-out;
+}
+
+
+.janela:nth-child(4) div.janela-texto:hover{
+    transition: all .5s ease-out;
+    background-color: rgb(0, 178, 240, 0.8);
+    bottom: 0px;
+    width: 650px;
+}
+
+.janela:nth-child(4) div.janela-texto h3{
+    font-weight: 500;
+}
+
+.janela:nth-child(4) div.janela-texto p{
+    font-size: 16px;
+    color: #111;
+}
+
+.Tapa_Buraco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0e1538;
+    height: 50px;
+}
+
+.tapa_buraco_001 {
+    position: relative;
+    left: 0px;
+    top: -7.8px;
+    width: 1340px;
+    height: 100px;
+    background-color: #0e1538;
 }
 
 
@@ -1380,7 +1419,7 @@ footer {
     justify-content: center;
     align-items: center;
     display: flex;
-    top: 0px;
+    top: -22px;
 }
 
 footer .footer {
