@@ -1272,7 +1272,7 @@ div.menu h1{
 
 .janela:nth-child(3){
     position: absolute;
-    width: 680px;
+    width: 670px;
     height: 370px;
     background-color: #0e1538;
     right: 4px;
@@ -1325,7 +1325,7 @@ div.menu h1{
 
 .janela:nth-child(4) {
     position: absolute;
-    width: 680px;
+    width: 670px;
     height: 370px;
     background-color: #0e1538;
     bottom: 4px;
