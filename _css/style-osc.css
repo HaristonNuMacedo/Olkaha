@@ -346,6 +346,11 @@ header.rowT1 {
     margin: 0px;
     z-index: 20;
     display: flex;
+    -webkit-transition: background 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out;
+    -ms-transition: background 0.5s ease-in-out;
+    -o-transition: background 0.5s ease-in-out;
+    transition: all 0.75s ease-in-out;
 }
 
 header.rowT1 .season1 {
@@ -1272,7 +1277,7 @@ div.menu h1{
 
 .janela:nth-child(3){
     position: absolute;
-    width: 670px;
+    width: 665px;
     height: 370px;
     background-color: #0e1538;
     right: 4px;
@@ -1325,7 +1330,7 @@ div.menu h1{
 
 .janela:nth-child(4) {
     position: absolute;
-    width: 670px;
+    width: 665px;
     height: 370px;
     background-color: #0e1538;
     bottom: 4px;
