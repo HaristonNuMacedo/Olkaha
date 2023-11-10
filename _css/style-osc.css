@@ -65,15 +65,14 @@ body {
 header .menu01 {
     background-color: #fff;
     width: 100%;
-    height: 15px;
-    border-bottom: 1px solid #ccc;
+    height: 10px;
 }
 
 .divMenu01 {
     background-color: #fff;
-    width: 86%;
-    margin-left: 8%;
-    height: 100%;
+    width: 100%;
+    position: relative;
+    top: -4px;
 }
 
 #container {
@@ -280,7 +279,7 @@ header .menu02 {
     height: 92px;
     border-bottom: none;
     display: inline-flex;
-    border-bottom: 15px solid white;
+    border-bottom: 10px solid white;
 }
 
 header .menu02 #logoPrincipal {
@@ -307,8 +306,10 @@ header .menu02 #logoPrincipal a h2 span {
 }
 
 header .menu02 #logoPrincipal a img {
+    position: relative;
+    top: -2px;
     width: 75px;
-    height: 70px;
+    height: 67px;
     transform: rotate(0deg);
 }
 
@@ -889,7 +890,7 @@ div.menu h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 20px solid #fff;  
+    border-top: 10px solid #fff;  
 }
 
 #tabelaSobre {
@@ -1152,7 +1153,7 @@ div.menu h1{
     align-items: center;
     justify-content: center;
     background: #0e1538;
-    border-top: 20px solid white;
+    border-top: 10px solid white;
     height: 840px;
 }
 
@@ -1188,7 +1189,7 @@ div.menu h1{
 
 .janela:nth-child(1) div.janela-texto{
     position: absolute;
-    bottom: -160px;
+    bottom: -155px;
     left: 0px;
     font-size: 22px;
     background-color: rgb(0, 178, 240, 0.8);
@@ -1243,7 +1244,7 @@ div.menu h1{
 
 .janela:nth-child(2) div.janela-texto{
     position: absolute;
-    bottom: -160px;
+    bottom: -155px;
     left: 0px;
     font-size: 22px;
     background-color: rgb(0, 178, 240, 0.8);
@@ -1296,7 +1297,7 @@ div.menu h1{
 
 .janela:nth-child(3) div.janela-texto{
     position: absolute;
-    bottom: -160px;
+    bottom: -155px;
     left: 0px;
     font-size: 22px;
     background-color: rgb(0, 178, 240, 0.8);
@@ -1349,7 +1350,7 @@ div.menu h1{
 
 .janela:nth-child(4) div.janela-texto{
     position: absolute;
-    bottom: -160px;
+    bottom: -155px;
     left: 0px;
     font-size: 22px;
     background-color: rgb(0, 178, 240, 0.8);
@@ -1392,7 +1393,7 @@ div.menu h1{
 .tapa_buraco_001 {
     position: relative;
     left: 0px;
-    top: -7.8px;
+    top: -15px;
     width: 1340px;
     height: 100px;
     background-color: #0e1538;
