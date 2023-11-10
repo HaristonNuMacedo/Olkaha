@@ -1221,6 +1221,23 @@ div.menu h1{
     color: #111;
 }
 
+.janela:nth-child(1) div.janela-texto div#SaibaMais{
+    position: absolute;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid white;
+    justify-content: end;
+    align-items: end;
+    padding: 10px 25px;
+    transition: all .5s;
+}
+
+.janela:nth-child(1) div.janela-texto div#SaibaMais:hover{
+    border: 2px solid white;
+}
+
+
+
 
 .janela:nth-child(2) {
     position: absolute;
