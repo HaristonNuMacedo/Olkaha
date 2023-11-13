@@ -1,5 +1,5 @@
 
-@media screen and (min-width: 1366px){
+@media screen and (min-width: 1366px), (min-width: 1280px){
     
     
     /*Sessão Após o menu principal onde fica a parte do 
@@ -28,6 +28,14 @@
         top: 25px;
     }
     
+
+    /*Sessão Sobre OLKAHA
+        <-->Sessão 02<-->
+    */
+    .ui-tabs-vertical .ui-tabs-panel .lado02 {
+        margin-right: 30px;
+        margin-left: 45px;
+    } 
 
 
     /*Sessão Sobre OLKAHA
@@ -64,4 +72,127 @@
         width: 550px;
     }
 
+}
+
+
+
+
+@media screen and (max-width: 1024px){
+        /*Sessão Após o menu principal onde fica a parte do 
+    Marketing Inicnial
+        <-->Sessão 01<-->
+    */
+    #sessao01 {
+        width: 950px;
+        height: 800px;
+    }
+
+    #mktOSC img {
+        width: 0px;
+    }
+
+    #sessao01 #video video {
+        bottom: 150px;
+        left: 19%;
+    }
+
+    #sessao01 .loader {
+        left: 90px;
+        bottom: 50px; 
+    }
+
+    #mktOSC .tituloPrinc {
+        top: 25px;
+        width: 800px;
+        left: 40px;
+    }
+
+    #sessao01 .slogaEm {
+        bottom: 0px;
+        left: 0px;
+    }
+
+
+    /*Sessão Sobre OLKAHA
+        <-->Sessão 02<-->
+    */
+    #tabes.ui-tabs-vertical {
+        width: 90%;
+    }
+
+    #tabelaSobre {
+        width: 985px;
+    }
+
+    .ui-tabs .ui-tabs-nav li {
+        width: 120px!important;
+    }
+    
+    #tabes.ui-tabs-vertical .ui-tabs-nav li{
+        width: 250px!important;
+    }
+
+    #tabes.ui-tabs-vertical .ui-tabs-nav {
+        width: 250px;
+    }
+
+    #tabes.ui-tabs-vertical .ui-tabs-nav li:nth-child(1) {
+        background: transparent url("../_img/search.png") 93% 50% no-repeat;
+        background-size: 16px;
+    }
+
+    #tabes.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:nth-child(1), #tabes.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:nth-child(2), 
+    #tabes.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:nth-child(3), #tabes.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:nth-child(4), 
+    #tabes.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:nth-child(5) {
+        width: 250px!important;
+    }
+
+    #tabes.ui-tabs-vertical .ui-tabs-nav li a {
+        width: 250px;
+    }
+
+    .ui-tabs-vertical .ui-tabs-panel {
+        width: 70%;
+    }
+
+    .ui-tabs-vertical .ui-tabs-panel .lado02 {
+        margin-right: 30px;
+        margin-left: 45px;
+    } 
+
+
+
+    /*Sessão Serviços OLKAHA
+        <-->Sessão 03<-->
+    */
+    #tabelaSobre {
+        width: 1275px;
+    }
+
+    .quadro {
+        width: 1185px;
+    }
+
+    .janela:nth-child(1) {
+        background-size: 610px;
+        background-position-x: -10px;
+    }
+
+    .janela:nth-child(2) {
+        background-size: 610px;
+        background-position-y: -10px;
+        background-position-x: -15px;
+    }
+
+    .janela:nth-child(3), .janela:nth-child(4)  {
+        width: 585px;
+        background-size: 680px;
+        background-position-x: -75px;
+    }
+
+    .janela:nth-child(1) div.janela-texto:hover, .janela:nth-child(2) div.janela-texto:hover,
+    .janela:nth-child(3) div.janela-texto:hover, .janela:nth-child(4) div.janela-texto:hover{
+        transition: all .5s ease-out;
+        width: 550px;
+    }
 }

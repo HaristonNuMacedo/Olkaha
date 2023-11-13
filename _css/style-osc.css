@@ -1011,6 +1011,11 @@ div.menu h1{
     cursor: pointer!important; 
 }
 
+.ui-tabs-vertical .ui-tabs-panel .lado02 {
+    margin-right: 30px;
+    margin-left: 45px;
+} 
+
 
 
                 /* ICONE PARA CADA ÍTEM NO MENU */  
