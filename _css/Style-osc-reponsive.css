@@ -1,0 +1,67 @@
+
+@media screen and (min-width: 1366px){
+    
+    
+    /*Sessão Após o menu principal onde fica a parte do 
+    Marketing Inicnial
+        <-->Sessão 01<-->
+    */
+    #sessao01 {
+        width: 1250px;
+    }
+
+    #mktOSC img {
+        width: 640px;
+    }
+
+    #sessao01 #video video {
+        bottom: 0px;
+        left: 8px;
+    }
+
+    #sessao01 .loader {
+        left: 90px;
+        bottom: 50px; 
+    }
+
+    #mktOSC .tituloPrinc {
+        top: 25px;
+    }
+    
+
+
+    /*Sessão Sobre OLKAHA
+        <-->Sessão 03<-->
+    */
+    #tabelaSobre {
+        width: 1275px;
+    }
+
+    .quadro {
+        width: 1185px;
+    }
+
+    .janela:nth-child(1) {
+        background-size: 610px;
+        background-position-x: -10px;
+    }
+
+    .janela:nth-child(2) {
+        background-size: 610px;
+        background-position-y: -10px;
+        background-position-x: -15px;
+    }
+
+    .janela:nth-child(3), .janela:nth-child(4)  {
+        width: 585px;
+        background-size: 680px;
+        background-position-x: -75px;
+    }
+
+    .janela:nth-child(1) div.janela-texto:hover, .janela:nth-child(2) div.janela-texto:hover,
+    .janela:nth-child(3) div.janela-texto:hover, .janela:nth-child(4) div.janela-texto:hover{
+        transition: all .5s ease-out;
+        width: 550px;
+    }
+
+}
