@@ -974,8 +974,7 @@ div.menu h1{
 }
 
 #tabes.ui-tabs-vertical .ui-tabs-nav li:nth-child(5) {
-    background: transparent url("../_img/alphabet.png") 94% 50% no-repeat;
-    background-size: 0px;
+    display: none;
 }
 
 #tabes.ui-tabs-vertical .ui-tabs-nav li:nth-child(6) {

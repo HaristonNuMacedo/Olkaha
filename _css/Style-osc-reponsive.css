@@ -77,6 +77,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1024px), (max-width: 1279px){
         /*Sessão Após o menu principal onde fica a parte do 
     Marketing Inicnial
@@ -195,26 +205,36 @@
     /*Sessão Serviços OLKAHA
         <-->Sessão 03<-->
     */
-
     .quadro {
-        width: 1185px;
+        width: 950px;
     }
 
     .janela:nth-child(1) {
-        background-size: 610px;
-        background-position-x: -10px;
+        width: 475px;
+        background-size: 550px;
+        background-position-x: 0px;
+        background-position-y: 0px;
     }
 
     .janela:nth-child(2) {
-        background-size: 610px;
-        background-position-y: -10px;
-        background-position-x: -15px;
+        width: 475px;
+        background-size: 560px;
+        background-position-x: -50px;
+        background-position-y: 0px;
     }
 
-    .janela:nth-child(3), .janela:nth-child(4)  {
-        width: 585px;
+    .janela:nth-child(3) {
+        width: 475px;
+        background-size: 660px;
+        background-position-x: -10px;
+        background-position-y: 0px;
+    }
+
+    .janela:nth-child(4) {
+        width: 475px;
         background-size: 680px;
-        background-position-x: -75px;
+        background-position-x: -150px;
+        background-position-y: 0px;
     }
 
     .janela:nth-child(1) div.janela-texto:hover, .janela:nth-child(2) div.janela-texto:hover,
@@ -223,6 +243,21 @@
         width: 550px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
