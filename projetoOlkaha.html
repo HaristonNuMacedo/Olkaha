@@ -7,8 +7,10 @@
     <title>Bem vindo a Olkaha</title>
     <link rel="stylesheet" href="_css/style-osc.css">
     <link rel="stylesheet" href="_css/Style-osc-reponsive.css">
+    <link href="_css/dinamico.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="_css/bootstrap.css"/>
-    <link rel="stylesheet" href="_css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="_css/bootstrap.min.css"/> 
 
     <link rel="sorcut icon" href="img/Logo-removebg-preview.png" type="image/png" style="width: 16px; height: 16px; transform: rotate(-1deg);">
 
@@ -66,7 +68,7 @@
                             </div>
         
                             <div class="dropdown">
-                                <li><a href="" class="btn-line"><span></span><span></span><span></span><span></span>Contratos</a></li>
+                                <li><a href="#ContratoPreco" class="btn-line"><span></span><span></span><span></span><span></span>Contratos</a></li>
                             </div>
                         </ul>	
 
@@ -243,6 +245,50 @@
         <div class="tapa_buraco_001"></div>
     </div>
 
+
+
+
+    <div class="tabelaPre">
+        <div class="titulos1">Tabela de preço - Para Contratos</div>
+
+        <section id="ContratoPreco">
+            <label>Defina seu contrato</label><br>
+            <div>
+                <select id="horario" name="horario" >
+                    <option value="h01">30 minutos por dia</option>
+                    <option value="h02">1 hora por dia</option>
+                    <option value="h03">2 horas por dia</option>
+                </select>
+
+                <select id="semanal" name="semanal">
+                    <option value="m01">1 dia por semana</option>
+                    <option value="m02">2 dias por semana</option>
+                    <option value="m03">3 dias por semana</option>
+                    <option value="m05">5 dias por semana</option>
+                </select>
+            </div>
+
+            <label class="texto02">Selecione um nível de comprometimento</label><br>
+            <div class="escolhaMes">
+                <div id="mes01">1 mês<br><span class="span01">&mdash;</span></div>
+                <div id="mes12">12 meses<br><span>&mdash;</span></div>
+            </div>
+
+            <div class="linha"></div>
+            <div class="resultadoPreco">
+                <!-- https://pt.stackoverflow.com/questions/368503/formatar-n%C3%BAmero-com-javascript -->
+                <div><div id="resultado"></div><span style="font-size: 18px;"> por mês</span></div>
+                <div id="desconto">15% OFF</div>
+            </div>
+            <div class="confirmarC">Confirmar Contrato</div>
+
+            <label style="font-size: 14px; display: block;">Altere, pause ou cancele seu plano a qualquer momento.</label>
+        </section>
+    </div>
+
+
+
+
     <footer>
         <div class="footer">
             <div class="finish-index">
@@ -286,6 +332,120 @@
             navigation.classList.toggle('active');
         }
     </script>
+
+<script>
+    $( "select" )
+      .change(function() {
+        var str = ""; 
+        var strSemanal = "";
+        var preco = 0;
+        $( "#horario option:selected" ).each(function() {
+          str += $( this ).text();
+        });
+
+        $( "#semanal option:selected" ).each(function() {
+          strSemanal += $( this ).text();
+        });
+
+
+        if (str == "30 minutos por dia") {
+          preco += 40;
+
+          if (strSemanal == "1 dia por semana") {
+              preco += 10; 
+          } else if(strSemanal == "2 dias por semana") {
+              preco += 120; 
+          } else if(strSemanal == "3 dias por semana") {
+              preco += 195; 
+          } else if(strSemanal == "5 dias por semana") {
+              preco += 365; 
+          }
+
+        } else if (str == "1 hora por dia") {
+          preco += 95;
+
+          if (strSemanal == "1 dia por semana") {
+              preco += 10; 
+          } else if(strSemanal == "2 dias por semana") {
+              preco += 180; 
+          } else if(strSemanal == "3 dias por semana") {
+              preco += 300; 
+          } else if(strSemanal == "5 dias por semana") {
+              preco += 605; 
+          }
+
+        } else if (str == "2 horas por dia") {
+          preco += 225;
+
+          if (strSemanal == "1 dia por semana") {
+              preco += 10; 
+          } else if(strSemanal == "2 dias por semana") {
+              preco += 380; 
+          } else if(strSemanal == "3 dias por semana") {
+              preco += 500; 
+          } else if(strSemanal == "5 dias por semana") {
+              preco += 805; 
+          }
+        }
+
+        $( "#resultado" ).text( "R$ " + preco.toLocaleString('pt-BR') + ",00");
+
+       if ($( "#mes12" ).click) {
+          $( "#mes12" ).click(function() {
+              var desconto = 0;
+              desconto = preco * 0.15; //15%
+              resultado = preco - desconto;
+              $( "#resultado" ).text( "R$ " + resultado.toLocaleString('pt-BR') );
+          }) 
+      } 
+      
+      if ($( "#mes01" ).click) {
+          $( "#mes01" ).click(function() {
+              $( "#resultado" ).text( "R$ " + preco.toLocaleString('pt-BR') + ",00");
+          })
+      }
+
+      })
+      .trigger( "change" );
+    </script>
+
+  <script>
+      function mudarCor(teste) {
+          mes01.style.backgroundColor = teste;
+          mes01.style.boxShadow = "rgba(0 0 0 / 40%) 0px 10px 25px";
+
+          mes12.style.boxShadow = "none";
+          mes12.style.backgroundColor = "#228891";
+
+          desconto.style.display = "none";
+      }
+
+      function mudarCor2(teste2) {
+          mes12.style.backgroundColor = teste2;
+          mes12.style.boxShadow = "rgba(0 0 0 / 40%) 0px 10px 25px";
+
+          mes01.style.boxShadow = "none";
+          mes01.style.backgroundColor = "#228891";
+
+          desconto.style.display = "block";
+      }
+
+      function iniciar() {
+
+          // Alguns objetos Html ativados no botão de seleção do mês
+          desconto.style.display = "none";
+          mes01.style.boxShadow = "rgba(0 0 0 / 40%) 0px 10px 25px";
+          mes01.style.backgroundColor = '#04385e';
+          mes01.addEventListener("click", function() {
+              mudarCor("#04385e");
+          });
+
+          mes12.addEventListener("click", function() {
+              mudarCor2("#04385e");     
+          });
+      }
+      window.onload = iniciar;
+  </script>
 
     <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=559891355162" target="_blank">
         <i class="fa fa-whatsapp"></i>
