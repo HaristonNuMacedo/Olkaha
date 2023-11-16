@@ -357,7 +357,7 @@
           } else if(strSemanal == "Até 3 Meses") {
               preco += 1950; 
           } else if(strSemanal == "Até 6 Meses") {
-              preco += 3650; 
+              preco += 3600; 
           }
 
         } else if (str == "Suporte de Hardware") {
@@ -383,7 +383,7 @@
           } else if(strSemanal == "Até 3 Meses") {
               preco += 5000; 
           } else if(strSemanal == "Até 6 Meses") {
-              preco += 8050; 
+              preco += 7800; 
           }
 
         } else if (str == "Desenvolvimento") {
@@ -396,30 +396,25 @@
           } else if(strSemanal == "Até 3 Meses") {
               preco += 5300; 
           } else if(strSemanal == "Até 6 Meses") {
-              preco += 9250; 
+              preco += 9350; 
           }
         }
 
-        function mudarFrase01(Frase01) {
-            resultado.value = "Por mês";
-        }
-
-
-        $( "#resultado" ).text( "R$ " + preco.toLocaleString('pt-BR') + ",00");
+        $( "#resultado" ).text( "R$ " + preco.toLocaleString('pt-BR') + ",00" + " por mês");
 
        if ($( "#mes12" ).click) {
           $( "#mes12" ).click(function() {
               var desconto = 0;
               desconto = preco * 1.15; //15%
               resultado = preco + desconto;
-              $( "#resultado" ).text( "R$ " + resultado.toLocaleString('pt-BR') );
+              $( "#resultado" ).text( "R$ " + preco.toLocaleString('pt-BR') + ",00 " + "total");
               
           }) 
       } 
       
       if ($( "#mes01" ).click) {
           $( "#mes01" ).click(function() {
-              $( "#resultado" ).text( "R$ " + preco.toLocaleString('pt-BR') + ",00");
+              $( "#resultado" ).text( "R$ " + preco.toLocaleString('pt-BR') + ",00 " + "por mês");
           })
       }
 
