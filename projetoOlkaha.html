@@ -249,40 +249,39 @@
 
 
     <div class="tabelaPre">
-        <div class="titulos1">Tabela de preço - Para Contratos</div>
+        <div class="titulos1">Tabela de preço - Simulador de Contrato</div>
 
         <section id="ContratoPreco">
-            <label>Defina seu contrato</label><br>
             <div>
+                <label class="texto01">Defina seu contrato</label>
                 <select id="horario" name="horario" >
-                    <option value="h01">30 minutos por dia</option>
-                    <option value="h02">1 hora por dia</option>
-                    <option value="h03">2 horas por dia</option>
+                    <option value="h01">Estrutura de rede</option>
+                    <option value="h02">Suporte de Hardware</option>
+                    <option value="h03">Criação de Sistema</option>
+                    <option value="h04">Desenvolvimento</option>
                 </select>
 
                 <select id="semanal" name="semanal">
-                    <option value="m01">1 dia por semana</option>
-                    <option value="m02">2 dias por semana</option>
-                    <option value="m03">3 dias por semana</option>
-                    <option value="m05">5 dias por semana</option>
+                    <option value="m01">Até 07 dias</option>
+                    <option value="m02">Até 30 dias</option>
+                    <option value="m03">Até 3 Meses</option>
+                    <option value="m05">Até 6 Meses</option>
                 </select>
             </div>
 
-            <label class="texto02">Selecione um nível de comprometimento</label><br>
+            <label class="texto02">Selecione forma de pagamento do contrato</label>
             <div class="escolhaMes">
-                <div id="mes01">1 mês<br><span class="span01">&mdash;</span></div>
-                <div id="mes12">12 meses<br><span>&mdash;</span></div>
+                <div id="mes01">Mensal<br><span class="span01">&mdash;</span></div>
+                <div id="mes12">Inicio do Contrato<br><span>&mdash;</span></div>
             </div>
 
             <div class="linha"></div>
             <div class="resultadoPreco">
                 <!-- https://pt.stackoverflow.com/questions/368503/formatar-n%C3%BAmero-com-javascript -->
-                <div><div id="resultado"></div><span style="font-size: 18px;"> por mês</span></div>
-                <div id="desconto">15% OFF</div>
+                <div><div id="resultado"></div></div>
+                <div id="desconto"></div>
             </div>
             <div class="confirmarC">Confirmar Contrato</div>
-
-            <label style="font-size: 14px; display: block;">Altere, pause ou cancele seu plano a qualquer momento.</label>
         </section>
     </div>
 
@@ -348,54 +347,73 @@
         });
 
 
-        if (str == "30 minutos por dia") {
-          preco += 40;
+        if (str == "Estrutura de rede") {
+          preco += 400;
 
-          if (strSemanal == "1 dia por semana") {
-              preco += 10; 
-          } else if(strSemanal == "2 dias por semana") {
-              preco += 120; 
-          } else if(strSemanal == "3 dias por semana") {
-              preco += 195; 
-          } else if(strSemanal == "5 dias por semana") {
-              preco += 365; 
+          if (strSemanal == "Até 07 dias") {
+              preco += 1000; 
+          } else if(strSemanal == "Até 30 dias") {
+              preco += 1200; 
+          } else if(strSemanal == "Até 3 Meses") {
+              preco += 1950; 
+          } else if(strSemanal == "Até 6 Meses") {
+              preco += 3650; 
           }
 
-        } else if (str == "1 hora por dia") {
-          preco += 95;
+        } else if (str == "Suporte de Hardware") {
+          preco += 950;
 
-          if (strSemanal == "1 dia por semana") {
-              preco += 10; 
-          } else if(strSemanal == "2 dias por semana") {
-              preco += 180; 
-          } else if(strSemanal == "3 dias por semana") {
-              preco += 300; 
-          } else if(strSemanal == "5 dias por semana") {
-              preco += 605; 
+          if (strSemanal == "Até 07 dias") {
+              preco += 1100; 
+          } else if(strSemanal == "Até 30 dias") {
+              preco += 1800; 
+          } else if(strSemanal == "Até 3 Meses") {
+              preco += 3000; 
+          } else if(strSemanal == "Até 6 Meses") {
+              preco += 6050; 
           }
 
-        } else if (str == "2 horas por dia") {
-          preco += 225;
+        } else if (str == "Criação de Sistema") {
+          preco += 1225;
 
-          if (strSemanal == "1 dia por semana") {
-              preco += 10; 
-          } else if(strSemanal == "2 dias por semana") {
-              preco += 380; 
-          } else if(strSemanal == "3 dias por semana") {
-              preco += 500; 
-          } else if(strSemanal == "5 dias por semana") {
-              preco += 805; 
+          if (strSemanal == "Até 07 dias") {
+              preco += 1500; 
+          } else if(strSemanal == "Até 30 dias") {
+              preco += 3800; 
+          } else if(strSemanal == "Até 3 Meses") {
+              preco += 5000; 
+          } else if(strSemanal == "Até 6 Meses") {
+              preco += 8050; 
+          }
+
+        } else if (str == "Desenvolvimento") {
+          preco += 1325;
+
+          if (strSemanal == "Até 07 dias") {
+              preco += 1750; 
+          } else if(strSemanal == "Até 30 dias") {
+              preco += 4200; 
+          } else if(strSemanal == "Até 3 Meses") {
+              preco += 5300; 
+          } else if(strSemanal == "Até 6 Meses") {
+              preco += 9250; 
           }
         }
+
+        function mudarFrase01(Frase01) {
+            resultado.value = "Por mês";
+        }
+
 
         $( "#resultado" ).text( "R$ " + preco.toLocaleString('pt-BR') + ",00");
 
        if ($( "#mes12" ).click) {
           $( "#mes12" ).click(function() {
               var desconto = 0;
-              desconto = preco * 0.15; //15%
-              resultado = preco - desconto;
+              desconto = preco * 1.15; //15%
+              resultado = preco + desconto;
               $( "#resultado" ).text( "R$ " + resultado.toLocaleString('pt-BR') );
+              
           }) 
       } 
       
