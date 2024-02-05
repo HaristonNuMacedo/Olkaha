@@ -194,7 +194,7 @@ div.resultadoPreco {
 
 .confirmarC:hover {
     transition: all 0.1s ease-in-out;
-    background: rgb(255, 201, 41) url("../img/setaAvancar.png") 90% 50% no-repeat;
+    background: rgb(255, 201, 41) url("../img/setaAvancar.png") 85% 50% no-repeat;
     background-size: 38px;
     box-shadow: rgb(255, 201, 41) 0px 10px 50px;
     font-size: 1.3em;
