@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="_css/cadastro-style.css">
     <link rel="sorcut icon" href="img/logoPartnership.png" type="image/png" style="width: 16px; height: 16px; transform: rotate(-1deg);">
 
+    <link rel="sorcut icon" href="img/Logo-removebg-preview.png" type="image/png" style="width: 16px; height: 16px; transform: rotate(-1deg);">
+
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -32,88 +34,59 @@
     </header>
 
     <nav>
-        <div class="container">
-            <h2>Formulário de Cadastro</h2>
-            <div class="row100">
-                <div class="col">
-                    <div class="inputBox">
-                        <input type="text" name="" required="required">
-                        <span class="text">Nome Completo*</span>
-                        <span class="line"></span>
+        <form method="POST" action="">
+            <div class="container">
+                <h2>Formulário de Cadastro</h2>
+                <div class="row100">
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span class="text">Nome Completo*</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span class="text">E-mail*</span>
+                            <span class="line"></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col">
-                    <div class="inputBox">
-                        <input type="text" name="" required="required">
-                        <span class="text">E-mail*</span>
-                        <span class="line"></span>
+                <div class="row100">
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="" id="telefone" required="required">
+                            <span class="text" id="telefone">Telefone*</span>
+                            <span class="line" id="telefone"></span>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="row100">
-                <div class="col">
-                    <div class="inputBox">
-                        <input type="text" name="" id="telefone" required="required">
-                        <span class="text" id="telefone">Telefone*</span>
-                        <span class="line" id="telefone"></span>
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span class="text">Empresa*</span>
+                            <span class="line"></span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col">
-                    <div class="inputBox">
-                        <input type="text" name="" required="required">
-                        <span class="text">Empresa*</span>
-                        <span class="line"></span>
-                    </div>
                 </div>
 
-            </div>
-
-            <div class="row100">
-                
-                <div class="col-2">
-                    <div class="inputBox">
-                        <Select>
-                            <option>...</option>
-                            <option>Estrutura de rede</option>
-                            <option>Suporte de Hardware</option>
-                            <option>Criação de Sistema</option>
-                            <option>Desenvolvimento</option>
-                           
-                        </Select>
-                        <span class="text">Projeto*</span>
-                        <span class="line" id="line02"></span>
+            
+                <div class="row100">
+                    <div class="col">
+                        <input type="submit" id="realizarCadastro" value="Realizar cadastro">
                     </div>
-                </div>
 
-                <div class="col-2">
-                    <div class="inputBox">
-                        <Select>
-                            <option>...</option>
-                            <option>5 dias</option>
-                            <option>7 dias</option>
-                            <option>10 dias</option>
-                            <option>15 dias</option>
-                            <option>30 dias</option>
-                        </Select>
-                        <span class="text">Prazo do Projeto*</span>
-                        <span class="line" id="line02"></span>
+                    <div class="col">
+                        <label style="color: #fff; margin-right: 15px;">Você já possui login?</label>
+                        <a href="login.html" id="efetuarLogin">Efetuar Login</a>
                     </div>
                 </div>
             </div>
-
-            <div class="row100">
-                <div class="col">
-                    <input type="submit" value="Realizar cadastro">
-                </div>
-
-                <div class="col">
-                    <a href="login.html"><input type="submit" id="efetuarLogin" value="Efetuar Login"></a>
-                </div>
-            </div>
-        </div>
+        </form>
     </nav>
 </body>
 </html>
