@@ -28,7 +28,7 @@ section#ContratoPreco {
 
 section#ContratoPreco div.definicaoContrato {
     position: relative;
-    left: -25px;
+    left: 0px;
 }
 
 section label {
@@ -40,7 +40,7 @@ section label {
 }
 
 select#horario {
-	width: 200px;
+	width: 280px;
 	padding: 20px 15px;
 	border-radius: 6px;
     margin-left: 10px;
@@ -58,7 +58,7 @@ select#horario {
 
 
 select#semanal {
-	width: 200px;
+	width: 280px;
 	padding: 20px 15px;
 	border-radius: 6px;
     margin-left: 10px;
@@ -75,22 +75,6 @@ select#semanal {
 }
 
 
-select#funcionario {
-	width: 200px;
-	padding: 20px 15px;
-	border-radius: 6px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-	font-size: 1.1em;
-	color: #fff;
-    border: 2px solid rgb(5, 44, 71);
-
-    cursor: pointer;
-	-webkit-appearance: none; 
-	background: #04385e url("../_img/arrow-down-sign-to-navigate.png") 90% 50% no-repeat;
-    background-size: 24px;
-}
 
 
 

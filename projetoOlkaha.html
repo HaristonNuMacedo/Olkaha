@@ -260,7 +260,7 @@
                 <select id="horario" name="horario" >
                     <option value="h01">Estrutura de rede</option>
                     <option value="h02">Suporte de Hardware</option>
-                    <option value="h03">Criação de Sistema</option>
+                    <option value="h03">Segurança de dados</option>
                     <option value="h04">Desenvolvimento</option>
                 </select>
 
@@ -270,19 +270,12 @@
                     <option value="m03">Até 12 Meses</option>
                     <option value="m05">Até 24 Meses</option>
                 </select>
-
-                <select id="funcionario" name="funcionario">
-                    <option value="F01">Até 3 Funcionários</option>
-                    <option value="F02">Até 6 Funcionários</option>
-                    <option value="F03">Até 12 Funcionários</option>
-                    <option value="F05">Até 24 ou mais Funcionários</option>
-                </select>
             </div>
 
             <label class="texto02">Cobranças por Funcionário(s)</label>
             <div class="escolhaMes">
-                <div id="mes01">Contrato Mensal <br>(Por Funcionário)<br><span class="span01">&mdash;</span></div>
-                <div id="mes12">Contrato Mensal <br> (Valor Total)<br><span>&mdash;</span></div>
+                <div id="mes01">Contrato Mensal <br>(Valor Mensal)<br><span class="span01">&mdash;</span></div>
+                <div id="mes12">Contrato Total <br>(Valor Total)<br><span>&mdash;</span></div>
             </div>
 
             <div class="linha"></div>
@@ -347,6 +340,7 @@
       .change(function() {
         var str = ""; 
         var strSemanal = "";
+        
         var preco = 0;
         $( "#horario option:selected" ).each(function() {
           str += $( this ).text();
@@ -358,75 +352,82 @@
 
 
         if (str == "Estrutura de rede") {
-          preco += 300;
+          preco += 100;
 
           if (strSemanal == "Até 30 dias") {
-              preco += 1700; 
+              preco += 1350; 
           } else if(strSemanal == "Até 6 Meses") {
-              preco += 2100; 
+              preco += 1600; 
           } else if(strSemanal == "Até 12 Meses") {
-              preco += 2150; 
+              preco += 1870; 
           } else if(strSemanal == "Até 24 Meses") {
-              preco += 2400; 
+              preco += 2150; 
           }
 
         } else if (str == "Suporte de Hardware") {
-          preco += 950;
+          preco += 50;
 
-          if (strSemanal == "Até 07 dias") {
-              preco += 1100; 
-          } else if(strSemanal == "Até 30 dias") {
-              preco += 1800; 
-          } else if(strSemanal == "Até 3 Meses") {
-              preco += 3000; 
+          if (strSemanal == "Até 30 dias") {
+              preco += 500; 
           } else if(strSemanal == "Até 6 Meses") {
-              preco += 6050; 
+              preco += 1600; 
+          } else if(strSemanal == "Até 12 Meses") {
+              preco += 1900; 
+          } else if(strSemanal == "Até 24 Meses") {
+              preco += 2050; 
           }
 
-        } else if (str == "Criação de Sistema") {
-          preco += 1225;
+        } else if (str == "Segurança de dados") {
+          preco += 250;
 
-          if (strSemanal == "Até 07 dias") {
-              preco += 1500; 
-          } else if(strSemanal == "Até 30 dias") {
-              preco += 3800; 
-          } else if(strSemanal == "Até 3 Meses") {
-              preco += 5000; 
+          if (strSemanal == "Até 30 dias") {
+              preco += 2500; 
           } else if(strSemanal == "Até 6 Meses") {
-              preco += 7800; 
+              preco += 3600; 
+          } else if(strSemanal == "Até 12 Meses") {
+              preco += 5200; 
+          } else if(strSemanal == "Até 24 Meses") {
+              preco += 8150; 
           }
 
         } else if (str == "Desenvolvimento") {
-          preco += 1325;
+          preco += 150;
 
-          if (strSemanal == "Até 07 dias") {
-              preco += 1750; 
-          } else if(strSemanal == "Até 30 dias") {
-              preco += 4200; 
-          } else if(strSemanal == "Até 3 Meses") {
-              preco += 5300; 
+          if (strSemanal == "Até 30 dias") {
+              preco += 1500; 
           } else if(strSemanal == "Até 6 Meses") {
-              preco += 9350; 
+              preco += 2300; 
+          } else if(strSemanal == "Até 12 Meses") {
+              preco += 2800; 
+          } else if(strSemanal == "Até 24 Meses") {
+              preco += 4150; 
           }
         }
 
-        $( "#resultado" ).text( "R$ " + preco.toLocaleString('pt-BR') + ",00" + " ao mês");
+        var funcionario = "";
+        $( "#funcionario option:selected" ).each(function() {
+            funcionario += $( this ).text();
+        });
 
-       if ($( "#mes12" ).click) {
-          $( "#mes12" ).click(function() {
-              var desconto = 0;
-              desconto = preco * 1.15; //15%
-              resultado = preco + desconto;
-              $( "#resultado" ).text( "R$ " + resultado.toLocaleString('pt-BR') + ",00 " + "total");
-              
-          }) 
-      } 
-      
-      if ($( "#mes01" ).click) {
-          $( "#mes01" ).click(function() {
-              $( "#resultado" ).text( "R$ " + preco.toLocaleString('pt-BR') + ",00 " + "ao mês");
-          })
-      }
+        
+        $( "#resultado" ).text( "R$ " + preco.toLocaleString('pt-BR') + ",00" + " ao mês");
+        if ($( "#mes01" ).click) {
+            $( "#mes01" ).click(function() {
+                $( "#resultado" ).text( "R$ " + preco.toLocaleString('pt-BR') + ",00 " + "ao mês");
+            })
+        } 
+        
+        if ($( "#mes12" ).click) {
+            $( "#mes12" ).click(function() {
+                var desconto = 0;
+                
+                desconto = preco * 0.15; //15%
+                resultado = preco + desconto;
+                $( "#resultado" ).text( "R$ " + resultado.toLocaleString('pt-BR') + ",00 " + "total");
+                
+            }) 
+        } 
+
 
       })
       .trigger( "change" );
