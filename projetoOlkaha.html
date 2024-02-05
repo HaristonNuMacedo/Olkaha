@@ -404,11 +404,6 @@
           }
         }
 
-        var funcionario = "";
-        $( "#funcionario option:selected" ).each(function() {
-            funcionario += $( this ).text();
-        });
-
         
         $( "#resultado" ).text( "R$ " + preco.toLocaleString('pt-BR') + ",00" + " ao mês");
         if ($( "#mes01" ).click) {
