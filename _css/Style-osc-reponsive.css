@@ -383,13 +383,13 @@
     */
 
     #servicos {
-        height: 1600px;
+        height: 1500px;
     }
 
     .quadro {
         width: 800px;
         height: 1600px;
-        top: 50px;
+        top: 125px;
         background-color: transparent;
     }
 
@@ -408,9 +408,9 @@
         position: relative;
         top: 0px;
         bottom: 0px;
-        left: 400px;
+        left: 350px;
         height: 300px;
-        width: 420px;
+        width: 450px;
         border-radius: 8px;
     }
 
@@ -418,44 +418,87 @@
         transition: all .5s ease-out;
         background-color: rgb(0, 178, 240, 0.8);
         bottom: 0px;
-        width: 420px;
+        width: 450px;
     }
 
 
     .janela:nth-child(2) {
         position: absolute;
-        width: 400px;
-        background-size: 400px;
-        background-position-y: 10px;
+        top: 710px;
+        left: 0;
+        width: 500px;
+        height: 300px;
+        background-size: 500px;
+        background-position-y: 0px;
         background-position-x: 0px;
+    }
+
+    .janela:nth-child(2) div.janela-texto {
+        position: relative;
+        top: 0px;
+        bottom: 0px;
+        left: 350px;
+        height: 300px;
+        width: 450px;
+        border-radius: 8px;
+    }
+
+    .janela:nth-child(2) div.janela-texto:hover{
+        transition: all .5s ease-out;
+        background-color: rgb(0, 178, 240, 0.8);
+        bottom: 0px;
+        width: 450px;
     }
 
 
     .janela:nth-child(3) {
         position: absolute;
-        top: 400px;
+        top: 350px;
         right: 0px;
-        width: 400px;
-        background-size: 400px;
-        background-position-x: 100px;
+        width: 500px;
+        height: 300px;
+        background-size: 500px;
+        background-position-x: 75px;
+        background-position-y: 8px;
     }
 
     .janela:nth-child(3) div.janela-texto {
         position: relative;
         top: 0px;
         bottom: 0px;
-        left: -400px;
+        left: -300px;
         height: 300px;
-        width: 420px;
+        width: 450px;
         border-radius: 8px;
     }
 
+    .janela:nth-child(3) div.janela-texto:hover{
+        transition: all .5s ease-out;
+        background-color: rgb(0, 178, 240, 0.8);
+        bottom: 0px;
+        width: 450px;
+    }
 
 
     .janela:nth-child(4) {
-        width: 400px;
-        background-size: 400px;
-        background-position-x: 0px;
+        position: absolute;
+        top: 1070px;
+        right: 0px;
+        width: 500px;
+        height: 300px;
+        background-size: 500px;
+        background-position-x: 50px;
+        background-position-y: 16px;
+    }
+
+    .janela:nth-child(4) div.janela-texto {
+        position: relative;
+        top: 0px;
+        bottom: 0px;
+        left: -300px;
+        height: 300px;
+        width: 450px;
+        border-radius: 8px;
     }
 
 }
