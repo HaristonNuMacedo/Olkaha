@@ -1158,7 +1158,8 @@ div.menu h1{
     justify-content: center;
     background: #0e1538;
     border-top: 10px solid white;
-    height: 840px;
+    height: 892px;
+    padding-top: 50px;
 }
 
 .quadro {
@@ -1225,7 +1226,8 @@ div.menu h1{
     color: #111;
 }
 
-.janela:nth-child(1) div.janela-texto div#SaibaMais{
+.janela:nth-child(1) div.janela-texto div#SaibaMais, .janela:nth-child(2) div.janela-texto div#SaibaMais, 
+.janela:nth-child(3) div.janela-texto div#SaibaMais, .janela:nth-child(4) div.janela-texto div#SaibaMais{
     position: absolute;
     font-size: 16px;
     color: #fff;
@@ -1236,7 +1238,8 @@ div.menu h1{
     transition: all .5s;
 }
 
-.janela:nth-child(1) div.janela-texto div#SaibaMais:hover{
+.janela:nth-child(1) div.janela-texto div#SaibaMais:hover, .janela:nth-child(2) div.janela-texto div#SaibaMais:hover,
+.janela:nth-child(3) div.janela-texto div#SaibaMais:hover, .janela:nth-child(4) div.janela-texto div#SaibaMais:hover{
     border: 2px solid white;
 }
 

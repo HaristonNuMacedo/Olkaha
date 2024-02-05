@@ -412,6 +412,7 @@
         height: 300px;
         width: 450px;
         border-radius: 8px;
+        padding-top: 20px;
     }
 
     .janela:nth-child(1) div.janela-texto:hover{
@@ -441,6 +442,7 @@
         height: 300px;
         width: 450px;
         border-radius: 8px;
+        padding-top: 20px;
     }
 
     .janela:nth-child(2) div.janela-texto:hover{
@@ -470,6 +472,7 @@
         height: 300px;
         width: 450px;
         border-radius: 8px;
+        padding-top: 20px;
     }
 
     .janela:nth-child(3) div.janela-texto:hover{
@@ -499,6 +502,7 @@
         height: 300px;
         width: 450px;
         border-radius: 8px;
+        padding-top: 20px;
     }
 
 }
