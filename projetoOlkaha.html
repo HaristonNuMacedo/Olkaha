@@ -255,7 +255,7 @@
         <div class="titulos1">Tabela de preço - Simulador de Contrato</div>
 
         <section id="ContratoPreco">
-            <div>
+            <div class="definicaoContrato">
                 <label class="texto01">Defina seu contrato</label>
                 <select id="horario" name="horario" >
                     <option value="h01">Estrutura de rede</option>
@@ -265,17 +265,24 @@
                 </select>
 
                 <select id="semanal" name="semanal">
-                    <option value="m01">Até 07 dias</option>
-                    <option value="m02">Até 30 dias</option>
-                    <option value="m03">Até 3 Meses</option>
-                    <option value="m05">Até 6 Meses</option>
+                    <option value="m01">Até 30 dias</option>
+                    <option value="m02">Até 6 Meses</option>
+                    <option value="m03">Até 12 Meses</option>
+                    <option value="m05">Até 24 Meses</option>
+                </select>
+
+                <select id="funcionario" name="funcionario">
+                    <option value="F01">Até 3 Funcionários</option>
+                    <option value="F02">Até 6 Funcionários</option>
+                    <option value="F03">Até 12 Funcionários</option>
+                    <option value="F05">Até 24 ou mais Funcionários</option>
                 </select>
             </div>
 
-            <label class="texto02">Selecione forma de pagamento do contrato</label>
+            <label class="texto02">Cobranças por Funcionário(s)</label>
             <div class="escolhaMes">
-                <div id="mes01">Mensal<br><span class="span01">&mdash;</span></div>
-                <div id="mes12">Inicio do Contrato<br><span>&mdash;</span></div>
+                <div id="mes01">Contrato Mensal <br>(Por Funcionário)<br><span class="span01">&mdash;</span></div>
+                <div id="mes12">Contrato Mensal <br> (Valor Total)<br><span>&mdash;</span></div>
             </div>
 
             <div class="linha"></div>
@@ -351,16 +358,16 @@
 
 
         if (str == "Estrutura de rede") {
-          preco += 400;
+          preco += 300;
 
-          if (strSemanal == "Até 07 dias") {
-              preco += 1000; 
-          } else if(strSemanal == "Até 30 dias") {
-              preco += 1200; 
-          } else if(strSemanal == "Até 3 Meses") {
-              preco += 1950; 
+          if (strSemanal == "Até 30 dias") {
+              preco += 1700; 
           } else if(strSemanal == "Até 6 Meses") {
-              preco += 3600; 
+              preco += 2100; 
+          } else if(strSemanal == "Até 12 Meses") {
+              preco += 2150; 
+          } else if(strSemanal == "Até 24 Meses") {
+              preco += 2400; 
           }
 
         } else if (str == "Suporte de Hardware") {
@@ -403,7 +410,7 @@
           }
         }
 
-        $( "#resultado" ).text( "R$ " + preco.toLocaleString('pt-BR') + ",00" + " por mês");
+        $( "#resultado" ).text( "R$ " + preco.toLocaleString('pt-BR') + ",00" + " ao mês");
 
        if ($( "#mes12" ).click) {
           $( "#mes12" ).click(function() {
@@ -417,7 +424,7 @@
       
       if ($( "#mes01" ).click) {
           $( "#mes01" ).click(function() {
-              $( "#resultado" ).text( "R$ " + preco.toLocaleString('pt-BR') + ",00 " + "por mês");
+              $( "#resultado" ).text( "R$ " + preco.toLocaleString('pt-BR') + ",00 " + "ao mês");
           })
       }
 
