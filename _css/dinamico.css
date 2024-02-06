@@ -176,28 +176,31 @@ div.resultadoPreco {
 .confirmarC {
     background: rgb(255, 201, 41) url("../img/setaAvancar.png") 85% 50% no-repeat;
     background-size: 32px;
-    color: #135f66;
+    color: #094247;
     display: inline-flex;
 
     width: 290px;
-    padding: 20px 35px;
+    padding: 18px 33px;
 	border-radius: 6px;
     margin-bottom: 30px;
     margin-left: 12px;
 	font-size: 1.2em;
     cursor: pointer;
 
-    position: relative;
-    top: -2px;
+    position: absolute;
+    bottom: 0px;
     box-shadow: rgb(0 0 0 / 15%) 0px 10px 20px;
 }
 
 .confirmarC:hover {
     transition: all 0.1s ease-in-out;
-    background: rgb(255, 201, 41) url("../img/setaAvancar.png") 85% 50% no-repeat;
-    background-size: 38px;
+    background: rgb(255, 201, 41) url("../img/setaAvancar.png") 85% 55% no-repeat;
+    background-size: 40px;
     box-shadow: rgb(255, 201, 41) 0px 10px 50px;
     font-size: 1.3em;
+    color: #094247;
+    padding: 20px 35px;
+    bottom: -2px;
 }
 
 
