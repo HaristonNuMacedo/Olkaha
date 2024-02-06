@@ -121,8 +121,8 @@ select:focus {
     width: 290px;
     padding: 10px 50px;
     color: #fff;
-    background-color: rgba(75, 136, 145, 0.5);
-    cursor: pointer;
+    background-color: #228891;
+    cursor: auto;
     border-bottom-right-radius: 6px;
     border-top-right-radius: 6px;
     font-size: 18px;
@@ -134,6 +134,33 @@ select:focus {
     font-size: 14px;
     color: #ddd;
 }
+
+
+input[type=text] {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid rgb(255, 201, 41);
+    text-align: center;
+    margin-top: 10px;
+}
+
+input[type=text]:focus {
+    border: none!important;
+    border-bottom: 2px solid rgb(255, 201, 41)!important;
+    margin: none;
+    padding: none;
+    background-color: transparent;
+    resize: none;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+input[type=text]:valid {
+    border-bottom: 2px solid rgb(255, 201, 41);
+}
+
 
 
 

@@ -275,7 +275,10 @@
             <label class="texto02">Cobranças por Funcionário(s)</label>
             <div class="escolhaMes">
                 <div id="mes01">Contrato Mensal <br>(Valor Mensal)<br><span class="span01">&mdash;</span></div>
-                <div id="mes12">Contrato Total <br>(Valor Total)<br><span>&mdash;</span></div>
+                <div id="mes12">
+                    <label for="fname">Quantidade de Funcionário(s):</label>
+                    <input type="text" id="fname" name="fname" value="0"><br>
+                </div>
             </div>
 
             <div class="linha"></div>
@@ -405,25 +408,12 @@
         }
 
         
-        $( "#resultado" ).text( "R$ " + preco.toLocaleString('pt-BR') + ",00" + " ao mês");
+        $( "#resultado" ).text( "R$ " + preco.toLocaleString('pt-BR') + ",00 " + "ao mês");
         if ($( "#mes01" ).click) {
             $( "#mes01" ).click(function() {
                 $( "#resultado" ).text( "R$ " + preco.toLocaleString('pt-BR') + ",00 " + "ao mês");
             })
         } 
-        
-        if ($( "#mes12" ).click) {
-            $( "#mes12" ).click(function() {
-                var desconto = 0;
-                
-                desconto = preco * 0.15; //15%
-                resultado = preco + desconto;
-                $( "#resultado" ).text( "R$ " + resultado.toLocaleString('pt-BR') + ",00 " + "total");
-                
-            }) 
-        } 
-
-
       })
       .trigger( "change" );
     </script>
@@ -457,10 +447,6 @@
           mes01.style.backgroundColor = '#04385e';
           mes01.addEventListener("click", function() {
               mudarCor("#04385e");
-          });
-
-          mes12.addEventListener("click", function() {
-              mudarCor2("#04385e");     
           });
       }
       window.onload = iniciar;
