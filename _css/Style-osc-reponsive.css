@@ -506,3 +506,54 @@
     }
 
 }
+
+
+
+
+
+@media screen and (max-width: 430px) {
+    /*
+        CABEÇALHO - HEADER
+    */
+
+    #container {
+        top: 130px;
+        z-index: 1;
+        border: 2px solid black;
+        border-radius: 8px;
+        background: #00b2f0;
+    }
+
+    .cybr-border02:after, .cybr-border02:before {
+        display: none;
+    }
+
+    .cybr-border08 {
+        display: none;
+    }
+
+    .cybr-border07{
+        border: none;
+    }
+
+    .cybr-border07:after, .cybr-border07:before {
+        border-radius: 8px;
+        top: -1px;
+    }
+
+    .cybr-border:after, .cybr-border:before {
+        display: none;
+        border: none;
+    }
+
+    header .menu02 {
+        margin-bottom: 100px;
+    }
+
+    header.rowT1 {
+        display: none;
+        height: 35px;
+    }
+
+
+}

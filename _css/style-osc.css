@@ -252,6 +252,34 @@ header .menu01 {
 }
 
 
+.cybr-border02:after, .cybr-border02:before {
+    display: none;
+}
+
+.cybr-border08 {
+    display: none;
+}
+
+.cybr-border07{
+    border: none;
+}
+
+.cybr-border07:after, .cybr-border07:before {
+    border-radius: 8px;
+    top: -1px;
+}
+
+.cybr-border:after, .cybr-border:before {
+    display: none;
+    border: none;
+}
+
+header .menu02 {
+    margin-bottom: 100px;
+}
+
+
+
 
 
 
@@ -885,7 +913,7 @@ div.menu h1{
 
 
 
-#sobrePartnerT {
+#sobreOlkaha {
     background-color: #0e1538;
     display: flex;
     justify-content: center;
