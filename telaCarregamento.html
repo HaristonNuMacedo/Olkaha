@@ -12,7 +12,11 @@
         background-color: #0e1538;
     }
 
-    .loader {
+    label {
+       position: relative; 
+    }
+
+    #loader {
         position: absolute;
         top: 45%;
         border: 8px solid #f3f3f3;
@@ -36,9 +40,22 @@
     }
 </style>
 </head>
-<body>
+<body onload="myFunction()" style="margin:0;">
 
-<div class="loader"></div>
+<div id="loader"></div>
+
+<script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      window.location.href = "projetoOlkaha.html";
+    }
+    </script>
 
 </body>
 </html>
