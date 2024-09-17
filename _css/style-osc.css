@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
@@ -1174,7 +1175,15 @@ div.menu h1{
 
 
 
-
+#GerenProjeto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-weight: 600;
+    font-size: 50px;
+    margin-top: 10px; margin-bottom: 10px;
+}
 
 #servicos {
     display: flex;
@@ -1182,63 +1191,55 @@ div.menu h1{
     justify-content: center;
     background: #0e1538;
     border-top: 10px solid white;
-    height: 892px;
+    height: 1435px;
     padding-top: 50px;
 }
 
 .quadro {
     position: relative;
     left: 0px;
-    top: 0px;
+    top: -250px;
     width: 1340px;
-    height: 754px;
+    height: 850px;
     padding: 4px;
-    background-color: #00b2f0;
+    background-color: #0e1538;
 }
 
 .janela:nth-child(1){
     position: absolute;
-    width: 680px;
-    height: 370px;
+    width: 1330px;
+    height: 250px;
     background-color: #0e1538;
-    top: 4px;
-    left: 4px;
+    top: 5px;
+    left: 5px;
 
     background-image:url(../img/infraestrutura-de-rede_5-21.jpg);
     margin-right: auto;
     margin-left: auto;
     background-repeat: no-repeat;
-    background-position: center;
-    background-color: #1C0501;
+    background-position: left;
     background-size: 680px;
 
-    border-top-left-radius: 25px;
+    border-radius: 15px;
     transition: all .5s ease-out;
 }
 
 .janela:nth-child(1) div.janela-texto{
     position: absolute;
-    bottom: -155px;
-    left: 0px;
+    bottom: 0px;
+    right: 0px;
     font-size: 22px;
-    background-color: rgb(0, 178, 240, 0.8);
+    background-color: rgb(0, 178, 240, 1);
     z-index: 0;
-    width: 450px;
+    width: 640px;
     color: black;
-    padding: 5px 20px;
+    padding: 15px 20px;
     font-weight: 500;
-    height: 200px;
+    height: 250px;
+    border-radius: 8px;
 
     cursor: pointer;
     transition: all .5s ease-out;
-}
-
-
-.janela:nth-child(1) div.janela-texto:hover{
-    transition: all .5s ease-out;
-    background-color: rgb(0, 178, 240, 0.8);
-    bottom: 0px;
-    width: 650px;
 }
 
 .janela:nth-child(1) div.janela-texto h3{
@@ -1251,20 +1252,29 @@ div.menu h1{
 }
 
 .janela:nth-child(1) div.janela-texto div#SaibaMais, .janela:nth-child(2) div.janela-texto div#SaibaMais, 
-.janela:nth-child(3) div.janela-texto div#SaibaMais, .janela:nth-child(4) div.janela-texto div#SaibaMais{
+.janela:nth-child(3) div.janela-texto div#SaibaMais, .janela:nth-child(4) div.janela-texto div#SaibaMais, .janela:nth-child(5) div.janela-texto div#SaibaMais{
     position: absolute;
     font-size: 16px;
-    color: #fff;
-    border: 1px solid white;
+    color: #000;
+    border: 1px solid #000;
     justify-content: end;
     align-items: end;
     padding: 10px 25px;
-    transition: all .5s;
+    transition: all .25s;
+    bottom: 25px; left: 25px;
 }
 
 .janela:nth-child(1) div.janela-texto div#SaibaMais:hover, .janela:nth-child(2) div.janela-texto div#SaibaMais:hover,
-.janela:nth-child(3) div.janela-texto div#SaibaMais:hover, .janela:nth-child(4) div.janela-texto div#SaibaMais:hover{
-    border: 2px solid white;
+.janela:nth-child(3) div.janela-texto div#SaibaMais:hover, .janela:nth-child(4) div.janela-texto div#SaibaMais:hover, .janela:nth-child(5) div.janela-texto div#SaibaMais:hover{
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+}
+
+.janela:nth-child(1) div.janela-texto:hover, .janela:nth-child(2) div.janela-texto:hover, .janela:nth-child(3) div.janela-texto:hover,
+.janela:nth-child(4) div.janela-texto:hover, .janela:nth-child(5) div.janela-texto:hover {
+    background-color: #fff;
+    transition: all .25s;
 }
 
 
@@ -1272,47 +1282,39 @@ div.menu h1{
 
 .janela:nth-child(2) {
     position: absolute;
-    width: 680px;
-    height: 370px;
+    width: 1330px;
+    height: 250px;
     background-color: #0e1538;
-    bottom: 4px;
-    left: 4px;
+    top: 264px;
+    right: 4px;
 
     background-image:url(../img/sites-de-busca-1.jpeg);
     margin-right: auto;
     margin-left: auto;
     background-repeat: no-repeat;
-    background-position: center;
-    background-color: #1C0501;
+    background-position: right;
     background-size: 680px;
 
-    border-bottom-left-radius: 25px;
+    border-radius: 15px;
     z-index: 0;
 }
 
 .janela:nth-child(2) div.janela-texto{
     position: absolute;
-    bottom: -155px;
+    bottom: 0px;
     left: 0px;
     font-size: 22px;
-    background-color: rgb(0, 178, 240, 0.8);
+    background-color: rgb(0, 178, 240, 1);
     z-index: 0;
-    width: 450px;
+    width: 640px;
     color: black;
-    padding: 5px 20px;
+    padding: 15px 20px;
     font-weight: 500;
-    height: 200px;
+    height: 250px;
+    border-radius: 8px;
 
     cursor: pointer;
     transition: all .5s ease-out;
-}
-
-
-.janela:nth-child(2) div.janela-texto:hover{
-    transition: all .5s ease-out;
-    background-color: rgb(0, 178, 240, 0.8);
-    bottom: 0px;
-    width: 650px;
 }
 
 .janela:nth-child(2) div.janela-texto h3{
@@ -1326,46 +1328,38 @@ div.menu h1{
 
 .janela:nth-child(3){
     position: absolute;
-    width: 665px;
-    height: 370px;
+    width: 1330px;
+    height: 250px;
     background-color: #0e1538;
     right: 4px;
-    top: 4px;
+    top: 524px;
 
     background-image:url(../img/Hardware.jpg);
     margin-right: auto;
     margin-left: auto;
     background-repeat: no-repeat;
-    background-position: center;
-    background-color: #1C0501;
+    background-position: left;
     background-size: 680px;
 
-    border-top-right-radius: 25px;
+    border-radius: 15px;
 }
 
 .janela:nth-child(3) div.janela-texto{
     position: absolute;
-    bottom: -155px;
-    left: 0px;
+    bottom: 0px;
+    right: 0px;
     font-size: 22px;
-    background-color: rgb(0, 178, 240, 0.8);
+    background-color: rgb(0, 178, 240, 1);
     z-index: 0;
-    width: 450px;
+    width: 640px;
     color: black;
-    padding: 5px 20px;
+    padding: 15px 20px;
     font-weight: 500;
-    height: 200px;
+    height: 250px;
+    border-radius: 8px;
 
     cursor: pointer;
     transition: all .5s ease-out;
-}
-
-
-.janela:nth-child(3) div.janela-texto:hover{
-    transition: all .5s ease-out;
-    background-color: rgb(0, 178, 240, 0.8);
-    bottom: 0px;
-    width: 650px;
 }
 
 .janela:nth-child(3) div.janela-texto h3{
@@ -1379,46 +1373,38 @@ div.menu h1{
 
 .janela:nth-child(4) {
     position: absolute;
-    width: 665px;
-    height: 370px;
+    width: 1330px;
+    height: 250px;
     background-color: #0e1538;
-    bottom: 4px;
+    top: 784px;
     right: 4px;
 
     background-image:url(../img/Seguranca-da-Informacao-1024x536.jpeg);
     margin-right: auto;
     margin-left: auto;
     background-repeat: no-repeat;
-    background-position: center;
-    background-color: #1C0501;
+    background-position: right;
     background-size: 680px;
 
-    border-bottom-right-radius: 25px;
+    border-radius: 15px;
 }
 
 .janela:nth-child(4) div.janela-texto{
     position: absolute;
-    bottom: -155px;
+    bottom: 0px;
     left: 0px;
     font-size: 22px;
-    background-color: rgb(0, 178, 240, 0.8);
+    background-color: rgb(0, 178, 240, 1);
     z-index: 0;
-    width: 450px;
+    width: 640px;
     color: black;
-    padding: 5px 20px;
+    padding: 15px 20px;
     font-weight: 500;
-    height: 200px;
+    height: 250px;
+    border-radius: 8px;
 
     cursor: pointer;
     transition: all .5s ease-out;
-}
-
-
-.janela:nth-child(4) div.janela-texto:hover{
-    transition: all .5s ease-out;
-    background-color: rgb(0, 178, 240, 0.8);
-    bottom: 0px;
-    width: 650px;
 }
 
 .janela:nth-child(4) div.janela-texto h3{
@@ -1429,6 +1415,55 @@ div.menu h1{
     font-size: 16px;
     color: #111;
 }
+
+
+.janela:nth-child(5) {
+    position: absolute;
+    width: 1330px;
+    height: 250px;
+    background-color: #0e1538;
+    top: 1044px;
+    left: 4px;
+
+    background-image:url(../img/Posts-Global-AD-1-1.png);
+    margin-right: auto;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 680px;
+
+    border-radius: 15px;
+    z-index: 10;
+}
+
+.janela:nth-child(5) div.janela-texto{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 22px;
+    background-color: rgb(0, 178, 240, 1);
+    z-index: 10;
+    width: 640px;
+    color: black;
+    padding: 15px 20px;
+    font-weight: 500;
+    height: 250px;
+    border-radius: 8px;
+
+    cursor: pointer;
+    transition: all .5s ease-out;
+}
+
+.janela:nth-child(5) div.janela-texto h3{
+    font-weight: 500;
+    z-index: 0;
+}
+
+.janela:nth-child(5) div.janela-texto p{
+    font-size: 16px;
+    color: #111;
+}
+
 
 .Tapa_Buraco {
     display: flex;

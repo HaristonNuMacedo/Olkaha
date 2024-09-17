@@ -50,6 +50,7 @@
     }
 
     .janela:nth-child(1) {
+        width: 1175px;
         background-size: 610px;
         background-position-x: -10px;
     }
