@@ -113,7 +113,7 @@
 
 
 
-@media screen and (min-width: 1024px), (min-width: 1279px){
+@media screen and (max-width: 1024px), (max-width: 1279px){
         /*Sessão Após o menu principal onde fica a parte do 
     Marketing Inicnial
         <-->Sessão 01<-->
@@ -236,38 +236,60 @@
     }
 
     .janela:nth-child(1) {
-        width: 475px;
-        background-size: 550px;
-        background-position-x: 0px;
-        background-position-y: 0px;
+        width: 900px;
+        background-size: 425px;
+        left: 20px;
+    }
+
+    .janela:nth-child(1) div.janela-texto{
+        width: 500px;
+        right: 0px;
     }
 
     .janela:nth-child(2) {
-        width: 475px;
-        background-size: 560px;
-        background-position-x: -50px;
-        background-position-y: 0px;
+        width: 900px;
+        background-size: 425px;
+        right: 30px;
+    }
+
+    .janela:nth-child(2) div.janela-texto{
+        width: 500px;
+        left: 0px;
     }
 
     .janela:nth-child(3) {
-        width: 475px;
-        background-size: 660px;
-        background-position-x: -10px;
-        background-position-y: 0px;
+        width: 900px;
+        background-size: 475px;
+        right: 30px;
+    }
+
+    .janela:nth-child(3) div.janela-texto{
+        width: 500px;
+        right: 0px;
     }
 
     .janela:nth-child(4) {
-        width: 475px;
-        background-size: 680px;
-        background-position-x: -150px;
-        background-position-y: 0px;
+        width: 900px;
+        background-size: 475px;
+        right: 30px;
     }
 
-    .janela:nth-child(1) div.janela-texto:hover, .janela:nth-child(2) div.janela-texto:hover,
-    .janela:nth-child(3) div.janela-texto:hover, .janela:nth-child(4) div.janela-texto:hover{
-        transition: all .5s ease-out;
-        width: 550px;
+    .janela:nth-child(4) div.janela-texto{
+        width: 500px;
+        left: 0px;
     }
+
+    .janela:nth-child(5) {
+        width: 900px;
+        background-size: 475px;
+        left: 20px;
+    }
+
+    .janela:nth-child(5) div.janela-texto{
+        width: 500px;
+        right: 0px;
+    }
+
 }
 
 
