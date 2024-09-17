@@ -46,31 +46,56 @@
     }
 
     .quadro {
-        width: 1185px;
+        width: 1100px;
     }
 
     .janela:nth-child(1) {
-        width: 1175px;
-        background-size: 610px;
-        background-position-x: -10px;
+        width: 1075px;
+        background-size: 560px;
+    }
+
+    .janela:nth-child(1) div.janela-texto{
+        width: 500px;
     }
 
     .janela:nth-child(2) {
-        background-size: 610px;
-        background-position-y: -10px;
-        background-position-x: -15px;
+        width: 1075px;
+        background-size: 560px;
+        left: -5px;
     }
 
-    .janela:nth-child(3), .janela:nth-child(4)  {
-        width: 585px;
-        background-size: 680px;
-        background-position-x: -75px;
+    .janela:nth-child(2) div.janela-texto {
+        width: 500px;
     }
 
-    .janela:nth-child(1) div.janela-texto:hover, .janela:nth-child(2) div.janela-texto:hover,
-    .janela:nth-child(3) div.janela-texto:hover, .janela:nth-child(4) div.janela-texto:hover{
-        transition: all .5s ease-out;
-        width: 550px;
+    .janela:nth-child(3) {
+        width: 1075px;
+        background-size: 560px;
+        left: -5px;
+    }
+
+    .janela:nth-child(3) div.janela-texto {
+        width: 500px;
+    }
+
+    .janela:nth-child(4) {
+        width: 1075px;
+        background-size: 560px;
+        left: -5px;
+    }
+
+    .janela:nth-child(4) div.janela-texto {
+        width: 500px;
+    }
+
+    .janela:nth-child(5) {
+        width: 1075px;
+        background-size: 560px;
+        left: 5px;
+    }
+
+    .janela:nth-child(5) div.janela-texto {
+        width: 500px;
     }
 
 }
@@ -88,7 +113,7 @@
 
 
 
-@media screen and (max-width: 1024px), (max-width: 1279px){
+@media screen and (min-width: 1024px), (min-width: 1279px){
         /*Sessão Após o menu principal onde fica a parte do 
     Marketing Inicnial
         <-->Sessão 01<-->
