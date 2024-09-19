@@ -1251,8 +1251,8 @@ div.menu h1{
     color: #111;
 }
 
-.janela:nth-child(1) div.janela-texto div#SaibaMais, .janela:nth-child(2) div.janela-texto div#SaibaMais, 
-.janela:nth-child(3) div.janela-texto div#SaibaMais, .janela:nth-child(4) div.janela-texto div#SaibaMais, .janela:nth-child(5) div.janela-texto div#SaibaMais{
+.janela:nth-child(1) div.janela-texto a#SaibaMais, .janela:nth-child(2) div.janela-texto a#SaibaMais, 
+.janela:nth-child(3) div.janela-texto a#SaibaMais, .janela:nth-child(4) div.janela-texto a#SaibaMais, .janela:nth-child(5) div.janela-texto a#SaibaMais{
     position: absolute;
     font-size: 16px;
     color: #000;
@@ -1262,10 +1262,11 @@ div.menu h1{
     padding: 10px 25px;
     transition: all .25s;
     bottom: 25px; left: 25px;
+    text-decoration: none;
 }
 
-.janela:nth-child(1) div.janela-texto div#SaibaMais:hover, .janela:nth-child(2) div.janela-texto div#SaibaMais:hover,
-.janela:nth-child(3) div.janela-texto div#SaibaMais:hover, .janela:nth-child(4) div.janela-texto div#SaibaMais:hover, .janela:nth-child(5) div.janela-texto div#SaibaMais:hover{
+.janela:nth-child(1) div.janela-texto a#SaibaMais:hover, .janela:nth-child(2) div.janela-texto a#SaibaMais:hover,
+.janela:nth-child(3) div.janela-texto a#SaibaMais:hover, .janela:nth-child(4) div.janela-texto a#SaibaMais:hover, .janela:nth-child(5) div.janela-texto a#SaibaMais:hover{
     border: 1px solid #000;
     background-color: #000;
     color: #fff;
