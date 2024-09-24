@@ -33,7 +33,7 @@ img.gerenciadorLogo{
     background-size: 24px;
 
     margin-top: -5px;
-    padding: 2px 36px;
+    padding: 3px 36px;
     border: none!important;
     margin: none!important;
     border-color: none!important;
@@ -178,6 +178,22 @@ html {
 
   .bd-mode-toggle .dropdown-menu .active .bi {
     display: block !important;
+  }
+
+
+
+
+
+
+  .navPaginacao {
+    position: relative;
+    width: 0%;
+    background-color: white;
+  }
+
+  .navPaginacao #testeInserir {
+    width: 160vh;
+    height: 80vh;
   }
 
   
