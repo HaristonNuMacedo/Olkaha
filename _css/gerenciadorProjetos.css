@@ -12,6 +12,10 @@ img.gerenciadorLogo{
     border: #00b2f0!important;
 }
 
+.flex-shrink-0 .text-end {
+  margin-right: 15px!important;
+}
+
 .form-control {
     background-image:url(../img/lupa.png);
     margin-right: 0px;
@@ -27,6 +31,7 @@ img.gerenciadorLogo{
     border-color: none!important;
     box-shadow: none!important;
     background-color: none!important;
+    width: 600px;
 }
 
 html {
@@ -34,9 +39,9 @@ html {
   }
   
   main {
-    height: 100vh;
+    height: 85vh!important;
     height: -webkit-fill-available;
-    max-height: 100vh;
+    max-height: 100vh!important;
     overflow-x: auto;
     overflow-y: hidden;
   }
