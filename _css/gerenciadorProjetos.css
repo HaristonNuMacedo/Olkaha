@@ -2,7 +2,7 @@ body{
     background-color: #0e1538;
 }
 
-.gerenciadorLogo img{
+img.gerenciadorLogo{
     width: 75px;
     height: 67px;
 }
@@ -10,4 +10,21 @@ body{
 .btn-warning {
     background-color: #00b2f0!important;
     border: #00b2f0!important;
+}
+
+.form-control {
+    background-image:url(../img/lupa.png);
+    margin-right: 0px;
+    margin-left: 0px;
+    background-position-x: 10px!important;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 24px;
+
+    padding: 8px 40px;
+    border: none!important;
+    margin: none!important;
+    border-color: none!important;
+    box-shadow: none!important;
+    background-color: none!important;
 }
