@@ -1,0 +1,13 @@
+body{
+    background-color: #0e1538;
+}
+
+.gerenciadorLogo img{
+    width: 75px;
+    height: 67px;
+}
+
+.btn-warning {
+    background-color: #00b2f0!important;
+    border: #00b2f0!important;
+}
