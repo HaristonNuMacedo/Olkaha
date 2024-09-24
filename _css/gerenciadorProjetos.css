@@ -51,7 +51,7 @@ html {
     height: -webkit-fill-available;
     max-height: 100vh!important;
     overflow-x: auto;
-    overflow-y: hidden;
+    overflow-y: auto;
     margin-top: -16px;
   }
   
@@ -187,13 +187,15 @@ html {
 
   .navPaginacao {
     position: relative;
-    width: 0%;
-    background-color: white;
+    width: 100%;
+    height: 75px;
+    background-color: #00b2f0;
   }
 
   .navPaginacao #testeInserir {
-    width: 170vh;
-    height: 100vh;
+    margin-top: 80px;
+    width: 171vh;
+    height: 83vh;
   }
 
   
