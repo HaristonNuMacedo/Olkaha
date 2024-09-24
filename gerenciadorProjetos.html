@@ -6,10 +6,19 @@
     <link rel="sorcut icon" href="img/Logo-removebg-preview.png" type="image/png" style="width: 16px; height: 16px; transform: rotate(-1deg);">
     <link rel="stylesheet" href="_css/gerenciadorProjetos.css">
     
+
+    <script>(() => {
+        'use strict'
+        const tooltipTriggerList = Array.from(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        tooltipTriggerList.forEach(tooltipTriggerEl => {
+          new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+      })()</script>
+    
 </head>
 
 <body>
-      <header class="py-3 mb-3 border-bottom">
+    <header class="py-3 mb-3 border-bottom">
         <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
             <a href="./telaCarregamento.html" class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
                 <img class="gerenciadorLogo" src="./img/Logo.png" alt="">
@@ -28,7 +37,52 @@
             </div>
           </div>
         </div>
-      </header>
+    </header>
+  
+    <main class="d-flex flex-nowrap" style="height: 85vh;">
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page">
+                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"/></svg>
+                    Home
+                </a>
+                </li>
+                <li>
+                <a href="#" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                    Dashboard
+                </a>
+                </li>
+                <li>
+                <a href="#" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"/></svg>
+                    Orders
+                </a>
+                </li>
+                <li>
+                <a href="#" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+                    Products
+                </a>
+                </li>
+                <li>
+                <a href="#" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+                    Customers
+                </a>
+                </li>
+            </ul>
+            <hr>
+            <div class="flex-shrink-0">
+                <div class="text-center">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-warning">Cadastro</button>
+                </div>
+            </div>
+        </div>
+    </main>
 
 </body>
 
