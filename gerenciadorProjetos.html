@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="_css/bootstrap.min.css">
     <link rel="sorcut icon" href="img/Logo-removebg-preview.png" type="image/png" style="width: 16px; height: 16px; transform: rotate(-1deg);">
     <link rel="stylesheet" href="_css/gerenciadorProjetos.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -20,7 +22,7 @@
     
           <div class="d-flex align-items-center">
             <form class="w-100 me-3" role="search">
-              <input type="search" class="form-control" placeholder="Pesquisar..." aria-label="Search">
+              <input type="search" id="barraPesquisa" class="form-control" placeholder="Pesquisar..." aria-label="Search">
             </form>
     
             <div class="flex-shrink-0">
@@ -38,7 +40,7 @@
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
-                <a href="#" class="nav-link active" aria-current="page">
+                <a href="#" class="nav-link active" aria-current="page" id="visãoGeral" onclick="abrir()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-columns-gap" viewBox="0 0 16 16">
                         <path d="M6 1v3H1V1zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm14 12v3h-5v-3zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zM6 8v7H1V8zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1zm14-6v7h-5V1zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/>
                     </svg>
@@ -89,7 +91,7 @@
                 </li>
             </ul>
             <hr>
-            <div class="flex-shrink-0">
+            <div class="flex-shrink-0"  id="UsuarioPg">
                 <div class="text-center">
                     <button type="button" class="btn btn-outline-light me-2">Login</button>
                     <button type="button" class="btn btn-warning">Cadastro</button>
@@ -98,13 +100,38 @@
         </div>
 
         <section id="navPaginacao" class="navPaginacao">
-
-            <object type="text/html" data="https://ge.globo.com/" id="testeInserir">
+            <nav>
+                <ul class="nav nav-underline">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" style="text-decoration: underline;">Active</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <object type="text/html" data="https://ge.globo.com/" id="testeInserir" style="display: block;">
                 <p>conteúdo alternativo para tecnologias que não suportam OBJECT</p>
             </object>
                 
         </section>
     </main>
+
+    <script>
+
+        function abrir() {
+            var abrirJanela = document.querySelector('#testeInserir')
+            abrirJanela.style.display = "none";
+        }
+        
+    </script>
 
 </body>
 
