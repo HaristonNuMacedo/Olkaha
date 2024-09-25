@@ -57,7 +57,7 @@
                 </a>
                 </li>
                 <li>
-                <a href="#" class="nav-link" id="visaoGeral03" onclick="abrir03()">
+                <a href="#" class="nav-link" id="visaoGeral03" onclick="abrir03()" style="color: white">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-ul" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
                       </svg>
@@ -126,47 +126,19 @@
             <object type="text/html" data="https://ge.globo.com/" id="testeInserir" style="display: block;">
             </object>
 
-            <object type="text/html" data="./projetoOlkaha.html" id="testeInserir02" style="display: none;">
+            <object type="text/html" data="" id="testeInserir02" style="display: none;">
+            </object>
+
+            <object type="text/html" data="" id="testeInserir03" style="display: none;"></object>
+            </object>
+
+            <object type="text/html" data="" id="testeInserir04" style="display: none;"></object>
             </object>
                 
         </section>
     </main>
 
-    <script>
-
-        function abrir01() {
-            var visaoG = document.querySelector('#visaoGeral')
-            visaoG.style.background = "#00b2f0";
-            visaoG.style.color = "black";
-
-            var visaoG02 = document.querySelector('#visaoGeral02')
-            visaoG02.style.background = "#222";
-            visaoG02.style.color = "white";
-
-            var abrirJanela02 = document.querySelector('#testeInserir02')
-            abrirJanela02.style.display = "none";
-
-            var abrirJanela = document.querySelector('#testeInserir')
-            abrirJanela.style.display = "block";
-        }
-
-        function abrir02() {
-            var visaoG02 = document.querySelector('#visaoGeral02')
-            visaoG02.style.background = "#00b2f0";
-            visaoG02.style.color = "#000";
-
-            var visaoG = document.querySelector('#visaoGeral')
-            visaoG.style.background = "#222";
-            visaoG.style.color = "white";
-
-            var abrirJanela = document.querySelector('#testeInserir')
-            abrirJanela.style.display = "none";
-
-            var abrirJanela02 = document.querySelector('#testeInserir02')
-            abrirJanela02.style.display = "block";
-        }
-        
-    </script>
+    <script src="./js/functionAbrirPaginacao.js"></script>
 
 </body>
 
