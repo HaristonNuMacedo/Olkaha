@@ -205,7 +205,8 @@ html {
     border-right: 0px;
   }
 
-  .navPaginacao #testeInserir, .navPaginacao #testeInserir02, .navPaginacao #testeInserir03 {
+  .navPaginacao #testeInserir, .navPaginacao #testeInserir02, .navPaginacao #testeInserir03,
+  .navPaginacao #testeInserir04 {
     margin-top: 8px;
     width: 100%;
     height: 85vh;
