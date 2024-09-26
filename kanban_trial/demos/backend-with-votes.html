@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="author" content="XB Software" />
+		<meta name="publisher" content="XB Software" />
+		<meta name="copyright" content="XB Software" />
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1,  user-scalable=no, shrink-to-fit=no"
+		/>
+		<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="../assets/favicon/icon-16.png" sizes="16x16" />
+		<link rel="icon" href="../assets/favicon/icon-32.png" sizes="32x32" />
+		<link rel="icon" href="../assets/favicon/icon-48.png" sizes="48x48" />
+		<link rel="icon" href="../assets/favicon/icon-96.png" sizes="96x96" />
+		<link
+			rel="icon"
+			href="../assets/favicon/icon-144.png"
+			sizes="144x144"
+		/>
+
+		<!-- Kanban -->
+		<link rel="stylesheet" href="../dist/kanban.css" />
+		<script src="../dist/kanban.js"></script>
+
+		<!-- Demo data -->
+		<script src="./common/data.js"></script>
+		<script src="./common/login.js"></script>
+		<link rel="stylesheet" href="../assets/demos.css" />
+
+		<title>Kanban: Backend</title>
+
+		<style>
+			.auth-panel {
+				width: 150px;
+				height: 130px;
+				margin: 0 auto;
+				margin-top: 10%;
+
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="g-wrap">
+			<header class="g-header">
+				<div class="h-wrap">
+					<div class="h-nav">
+						<a href="../index.html">Back to demos</a>
+					</div>
+					<div class="h-title">
+						Kanban with backend. Check
+						<a
+							href="https://github.com/web-widgets/kanban-node"
+							target="_blank"
+							>Node.js</a
+						>
+						and
+						<a
+							href="https://github.com/web-widgets/kanban-go"
+							target="_blank"
+							>Go</a
+						>
+						examples
+					</div>
+					<div class="h-cta">
+						<a
+							href="https://dhtmlx.com/docs/products/dhtmlxKanban/download.shtml"
+							target="_blank"
+							class="g-btn"
+							>Free Trial</a
+						>
+					</div>
+				</div>
+			</header>
+
+			<div id="auth" class="auth-panel"></div>
+
+			<div id="toolbar"></div>
+			<div id="root"></div>
+		</div>
+
+		<script>
+			const {
+				Kanban,
+				Toolbar,
+				RestDataProvider,
+				defaultEditorShape,
+				defaultCardShape,
+			} = kanban;
+
+			const url = "https://docs.dhtmlx.com/kanban-backend";
+			const restProvider = new RestDataProvider(url);
+
+			loginWithUser(initKanban, restProvider, url, "auth");
+
+			function initKanban(restProvider, url, token, userId) {
+				Promise.all([
+					restProvider.getCards(),
+					restProvider.getColumns(),
+					restProvider.getRows(),
+					restProvider.getUsers(),
+					restProvider.getLinks(),
+				]).then(([cards, columns, rows, users, links]) => {
+					restProvider.setHeaders({
+						"Remote-Token": token,
+					});
+
+					// widget initialization
+					const cardShape = {
+						...defaultCardShape,
+						label: true,
+						description: true,
+						progress: true,
+						start_date: true,
+						end_date: true,
+						priority: true,
+						color: true,
+						cover: true,
+						attached: true,
+						users: {
+							show: true,
+							values: users,
+						},
+						votes: {
+							show: true,
+						},
+						comments: true,
+					};
+
+					const editorShape = [
+						...defaultEditorShape,
+						{
+							key: "attached",
+							type: "files",
+							label: "Files",
+							uploadURL: url + "/uploads",
+						},
+						{
+							type: "comments",
+							key: "comments",
+							label: "Comments",
+							config: {
+								placement: "editor",
+							},
+						},
+						{
+							type: "links",
+							key: "links",
+							label: "Links",
+						},
+					];
+
+					const board = new Kanban("#root", {
+						cards,
+						columns,
+						rows,
+						links,
+						rowKey: "row",
+						cardShape,
+						editorShape,
+						currentUser: parseInt(userId),
+					});
+					board.api.setNext(restProvider);
+					new Toolbar("#toolbar", { api: board.api });
+				});
+			}
+		</script>
+	</body>
+</html>
