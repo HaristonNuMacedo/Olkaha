@@ -3,22 +3,22 @@ function getData() {
 		{
 			id: 1,
 			label: "Steve Smith",
-			avatar: "../assets/user.jpg",
+			avatar: "../img/user.jpg",
 		},
 		{
 			id: 2,
 			label: "Aaron Long",
-			avatar: "../assets/user-2.jpg",
+			avatar: "../img/user-2.jpg",
 		},
 		{
 			id: 3,
 			label: "Angela Allen",
-			avatar: "../assets/user-3.jpg",
+			avatar: "../img/user-3.jpg",
 		},
 		{
 			id: 4,
 			label: "Angela Long",
-			avatar: "../assets/user-4.jpg",
+			avatar: "../img/user-4.jpg",
 		},
 	];
 
@@ -35,9 +35,9 @@ function getData() {
 		priority: {
 			show: true,
 			values: [
-				{ id: 1, color: "#FF5252", label: "High" },
-				{ id: 2, color: "#FFC975", label: "Medium" },
-				{ id: 3, color: "#65D3B3", label: "Low" },
+				{ id: 1, color: "#FF5252", label: "Alta" },
+				{ id: 2, color: "#FFC975", label: "Normal" },
+				{ id: 3, color: "#65D3B3", label: "Baixa" },
 			],
 		},
 		color: true,
@@ -48,19 +48,19 @@ function getData() {
 
 	const columns = [
 		{
-			label: "Backlog",
+			label: "Pendente",
 			id: "backlog",
 		},
 		{
-			label: "In progress",
+			label: "Em processo",
 			id: "inprogress",
 		},
 		{
-			label: "Testing",
+			label: "Em revisão",
 			id: "testing",
 		},
 		{
-			label: "Done",
+			label: "Concluído",
 			id: "done",
 		},
 	];
@@ -244,9 +244,9 @@ function getData() {
 			id: "priority",
 			label: "Priority",
 			columns: [
-				{ id: 1, label: "High" },
-				{ id: 2, label: "Medium" },
-				{ id: 3, label: "Low" },
+				{ id: 1, label: "Alta" },
+				{ id: 2, label: "normal" },
+				{ id: 3, label: "baixa" },
 			],
 		},
 	];
