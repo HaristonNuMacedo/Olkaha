@@ -3,22 +3,22 @@ function getData() {
 		{
 			id: 1,
 			label: "Steve Smith",
-			avatar: "../img/user.jpg",
+			
 		},
 		{
 			id: 2,
 			label: "Aaron Long",
-			avatar: "../img/user-2.jpg",
+			
 		},
 		{
 			id: 3,
-			label: "Angela Allen",
-			avatar: "../img/user-3.jpg",
+			label: "Gabi Allen",
+			
 		},
 		{
 			id: 4,
 			label: "Angela Long",
-			avatar: "../img/user-4.jpg",
+			
 		},
 	];
 
@@ -134,15 +134,6 @@ function getData() {
 			progress: 75,
 			column: "inprogress",
 			type: "feature",
-			attached: [
-				{
-					isCover: true,
-					coverURL: "../assets/img-1.jpg",
-					previewURL: "../assets/img-1.jpg",
-					url: "../assets/img-1.jpg",
-					name: "img-1.jpg",
-				},
-			],
 		},
 		{
 			id: 5,
@@ -180,15 +171,6 @@ function getData() {
 			users: [4],
 			column: "testing",
 			type: "task",
-			attached: [
-				{
-					isCover: true,
-					coverURL: "../assets/img-2.jpg",
-					previewURL: "../assets/img-2.jpg",
-					url: "../assets/img-2.jpg",
-					name: "img-2.jpg",
-				},
-			],
 		},
 		{
 			id: 9,
